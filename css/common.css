@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/* ===================================================================
+CSS information
+
+ file name  : common.css
+ author     : Ability Consultant
+ style info : 基本・共通設定
+=================================================================== */
+/* -----------------------------------------------------------
+	基本設定、リンクカラーなど
+----------------------------------------------------------- */
+/* ===================================================================
+CSS information
+
+ file name  : print.css
+ author     : Ability Consultant
+ style info : 印刷用
+=================================================================== */
+html {
+	font-size: small;
+	line-height: 1.5;
+}
+
+body {
+	color: #313131;
+	background: #fff;
+	-webkit-text-size-adjust: none;
+	font-size: 100%;
+}
+
+.ie body {
+	font-size: 98%;
+}
+
+@media only screen and (max-width: 767px) {
+	body {
+		font-size: 93%;
+	}
+}
+
+body a {
+	color: #4b4b4b;
+}
+
+body a:link, body a:visited, body a:active {
+	text-decoration: underline;
+}
+
+.mouse body a:hover,
+.touch body a.touchstart {
+	text-decoration: none;
+	color: #646464;
+}
+
+body img {
+	max-width: 100%;
+	-webkit-touch-callout: none;
+}
+
+body, pre, input, textarea, select {
+	font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,sans-serif;
+}
+
+input, select, textarea {
+	font-size: 100%;
+}
+
+html.ie8 .view_tab,
+html.ie8 .view_tab_sp,
+html.ie8 .view_sp {
+	display: none !important;
+}
+
+html.ie8 #page {
+	min-width: 1024px !important;
+	margin: auto;
+	font-size: 100% !important;
+}
+
+@media only screen and (min-width: 1025px) {
+	body .view_tab-sp, body .view_tab {
+		display: none !important;
+	}
+}
+
+@media print {
+	body .view_tab-sp, body .view_tab {
+		display: none !important;
+	}
+}
+
+.ie8 body .view_tab-sp, .ie8 body .view_tab {
+	display: none !important;
+}
+
+@media only screen and (min-width: 768px) {
+	body .view_sp {
+		display: none !important;
+	}
+}
+
+@media print {
+	body .view_sp {
+		display: none !important;
+	}
+}
+
+.ie8 body .view_sp {
+	display: none !important;
+}
+
+@media only screen and (max-width: 1024px) {
+	body .view_pc {
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	body .view_pc-tab, body .view_tab {
+		display: none !important;
+	}
+}
+
+.mouse .over {
+	-webkit-transition: opacity 200ms ease-in;
+	-moz-transition: opacity 200ms ease-in;
+	-o-transition: opacity 200ms ease-in;
+	transition: opacity 200ms ease-in;
+}
+
+.mouse .over:hover,
+.touch .over.touchstart {
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+	opacity: 0.7;
+}
+
+.touch .over {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.touch .over.touchend {
+	-webkit-transition-delay: 200ms;
+	-moz-transition-delay: 200ms;
+	-o-transition-delay: 200ms;
+	transition-delay: 200ms;
+}
+
+/* -----------------------------------------------------------
+	#page
+----------------------------------------------------------- */
+@media only screen and (min-width: 768px) {
+	#page {
+		font-size: 100% !important;
+	}
+}
+
+@media print {
+	#page {
+		font-size: 100% !important;
+	}
+}
+
+.ie8 #page {
+	font-size: 100% !important;
+}
+
+/* ===================================================================
+CSS information
+
+ file name  : print.css
+ author     : Ability Consultant
+ style info : 印刷用
+=================================================================== */
+/* ===================================================================
+CSS information
+
+ file name  : print.css
+ author     : Ability Consultant
+ style info : 印刷用
+=================================================================== */
+
+/*# sourceMappingURL=../maps/common.css.map */

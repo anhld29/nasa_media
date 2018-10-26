@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+
+ file name  : print.css
+ author     : Ability Consultant
+ style info : 印刷用
+=================================================================== */
+@import "settings";
+
+html {
+	font-size: small;
+	line-height: 1.5;
+}
+body {
+	color: $baseColor;
+	background: #fff;
+	-webkit-text-size-adjust: none;
+	@include fsz($baseSize,13);
+	.ie & { @include fsz($baseSize,13.4); }
+	@include mq(sp) {
+		@include fsz($baseSize - 1,13);
+	}
+	a {
+		color: lighten($baseColor, 10%);
+		&:link,
+		&:visited,
+		&:active {
+			text-decoration: underline;
+		}
+		.mouse &:hover,
+		.touch &.touchstart {
+			text-decoration: none;
+			color: lighten($baseColor, 20%);
+		}
+	}
+	img {
+		max-width: 100%;
+		-webkit-touch-callout: none;
+	}
+}
+body,pre,input,textarea,select {
+	font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,sans-serif;
+}
+input,select,textarea {
+	font-size: 100%;
+}
+
+// ie8フォロー
+html.ie8 {
+	.view_tab, 
+	.view_tab_sp, 
+	.view_sp {
+		display: none !important;
+	}
+	#page {
+		min-width: $columnWidth * 1px !important;
+		margin: auto;
+		font-size: 100% !important;
+	}
+}
+
+// .view_xxx
+body {
+	@include mq(pc) {
+		.view_tab-sp,.view_tab {display: none !important;}
+	}
+	@include mq(pc_tab) {
+		.view_sp {display: none !important;}
+	}
+	@include mq(tab_sp) {
+		.view_pc {display: none !important;}
+	}
+	@include mq(sp) {
+		.view_pc-tab,.view_tab {display: none !important;}
+	}
+}
+
+// .mouseOver
+.over {
+	.mouse & {
+		@include transition(opacity 200ms ease-in);
+	}
+	@include hover {
+		@include opacity(.7);
+	}
+}
+
+// border-box
+* {
+	// @include box-sizing(border-box);
+}
+
+
+/* -----------------------------------------------------------
+	#page
+----------------------------------------------------------- */
+#page {
+	@include mq(pc_tab) {
+		font-size: 100% !important;
+	}
+}
+

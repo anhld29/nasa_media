@@ -1,0 +1,26 @@
+{
+  "name": "gulp_hch",
+  "version": "1.0.0",
+  "description": "Gulp_彦根キャッスル リゾート＆スパ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "yumekaiyu"
+  ],
+  "author": "frontainer",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-connect-php": "^1.0.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0"
+  }
+}
