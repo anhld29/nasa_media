@@ -5,7 +5,7 @@ $experimental-support-for-svg: true;
 //----------------------------------------------//
 // *Media Queries								//
 //----------------------------------------------//
-$bp_tab: 1024px; //tab
+$bp_tab: 1170px; //tab
 $bp_sp: 767px; //sp
 
 @mixin mq($device,$val:null,$val2:null) {
@@ -77,10 +77,10 @@ $bp_sp: 767px; //sp
 //----------------------------------------------//
 
 // メインカラム
-$columnWidth: 1024;
+$columnWidth: 1170;
 
 // フォントのベースサイズ
-$baseSize: 13;
+$baseSize: 14;
 
 // フォントのベーカラー
 $baseColor: #313131;
@@ -210,3 +210,28 @@ $baseColor: #313131;
 	@include background(linear-gradient($c1,$c2));
 	@include filter-gradient($c1,$c2);
 }
+
+@mixin st_title() {
+	text-align: center;
+	position: relative;
+	padding-bottom: 15px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	@include fsz(18);
+	&:after {
+		position: absolute;
+		bottom: 0;
+		height: 2px;
+		width: 130px;
+		content: "";
+		background: #df0002;
+		left: 50%;
+		margin-left: -65px;
+	}
+	span {
+		display: inline-block;
+		position: relative;
+	}
+}
+
+

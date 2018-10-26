@@ -101,3 +101,7 @@ body {
 	}
 }
 
+.wrap {
+	@extend %bw;
+	@extend %cf;
+}

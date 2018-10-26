@@ -6,6 +6,23 @@ CSS information
  author     : Ability Consultant
  style info : 基本・共通設定
 =================================================================== */
+.wrap {
+	max-width: 1170px;
+	margin: auto;
+}
+
+@media only screen and (max-width: 1170px) {
+	.wrap {
+		width: 95%;
+	}
+}
+
+.wrap:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 /* -----------------------------------------------------------
 	基本設定、リンクカラーなど
 ----------------------------------------------------------- */
@@ -16,6 +33,23 @@ CSS information
  author     : Ability Consultant
  style info : 印刷用
 =================================================================== */
+.wrap {
+	max-width: 1170px;
+	margin: auto;
+}
+
+@media only screen and (max-width: 1170px) {
+	.wrap {
+		width: 95%;
+	}
+}
+
+.wrap:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 html {
 	font-size: small;
 	line-height: 1.5;
@@ -25,16 +59,16 @@ body {
 	color: #313131;
 	background: #fff;
 	-webkit-text-size-adjust: none;
-	font-size: 100%;
+	font-size: 108%;
 }
 
 .ie body {
-	font-size: 98%;
+	font-size: 105%;
 }
 
 @media only screen and (max-width: 767px) {
 	body {
-		font-size: 93%;
+		font-size: 100%;
 	}
 }
 
@@ -72,12 +106,12 @@ html.ie8 .view_sp {
 }
 
 html.ie8 #page {
-	min-width: 1024px !important;
+	min-width: 1170px !important;
 	margin: auto;
 	font-size: 100% !important;
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1171px) {
 	body .view_tab-sp, body .view_tab {
 		display: none !important;
 	}
@@ -109,7 +143,7 @@ html.ie8 #page {
 	display: none !important;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1170px) {
 	body .view_pc {
 		display: none !important;
 	}
@@ -171,6 +205,29 @@ CSS information
  author     : Ability Consultant
  style info : 印刷用
 =================================================================== */
+.wrap {
+	max-width: 1170px;
+	margin: auto;
+}
+
+@media only screen and (max-width: 1170px) {
+	.wrap {
+		width: 95%;
+	}
+}
+
+.wrap:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.header {
+	color: #fff;
+	background: red;
+	padding: 40px;
+}
+
 /* ===================================================================
 CSS information
 
@@ -178,5 +235,113 @@ CSS information
  author     : Ability Consultant
  style info : 印刷用
 =================================================================== */
+.wrap {
+	max-width: 1170px;
+	margin: auto;
+}
+
+@media only screen and (max-width: 1170px) {
+	.wrap {
+		width: 95%;
+	}
+}
+
+.wrap:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.con_courses h3.st_title {
+	text-align: center;
+	position: relative;
+	padding-bottom: 15px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	font-size: 129%;
+}
+
+.con_courses h3.st_title:after {
+	position: absolute;
+	bottom: 0;
+	height: 2px;
+	width: 130px;
+	content: "";
+	background: #df0002;
+	left: 50%;
+	margin-left: -65px;
+}
+
+.con_courses h3.st_title span {
+	display: inline-block;
+	position: relative;
+}
+
+.con_courses .box_courses {
+	margin: 0 15px;
+	overflow: hidden;
+}
+
+.con_courses .box_courses .box_course {
+	width: 25%;
+	float: left;
+}
+
+.con_courses .box_courses .box_course .box_course_wrap {
+	padding: 0 15px;
+}
+
+.con_courses .box_courses .box_course .box_course_wrap .box_top {
+	border-radius: 5px 5px 0 0;
+	position: relative;
+}
+
+.con_courses .box_courses .box_course .box_course_wrap .box_top .box_name {
+	position: relative;
+	text-align: center;
+	padding: 20px 0 25px 0;
+	background: #00162e;
+	color: #fff;
+}
+
+.con_courses .box_courses .box_course .box_course_wrap .box_top .box_name img {
+	position: absolute;
+	left: 20px;
+	top: -40px;
+}
+
+.con_courses .box_courses .box_course .box_course_wrap .box_info {
+	padding: 10px;
+	border: 1px solid #e6e6e6;
+}
+
+.con_courses .box_courses .box_course .box_course_wrap .box_info .box_price {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	padding: 10px 0;
+}
+
+.con_courses .box_courses .box_course .box_course_wrap .box_info .box_price .price {
+	color: #df0002;
+	font-size: 20px;
+}
+
+.con_courses .box_courses .box_course .box_course_wrap .box_info .box_price .price_sale {
+	font-size: 12px;
+	color: #c9c9ca;
+}
+
+.con_courses .box_courses .box_course .box_course_wrap .box_info .box_price .price_percent {
+	font-size: 14px;
+	color: #df0002;
+}
+
+.con_courses .box_courses .box_course .box_course_wrap .box_info .box_desc {
+	border-top: 1px solid #f3f3f3;
+	padding: 10px 0 5px 0;
+}
 
 /*# sourceMappingURL=../maps/common.css.map */

@@ -8,3 +8,66 @@ CSS information
 =================================================================== */
 @import "settings";
 
+.con_courses {
+	h3.st_title {
+		@include st_title();
+	}
+	.box_courses {
+		margin: 0 15px;
+		overflow: hidden;
+		.box_course {
+			width: 25%;
+			float: left;
+			.box_course_wrap {
+				padding: 0 15px;
+				.box_top {
+					border-radius: 5px 5px 0 0;
+					position: relative;
+					.box_name {
+						position: relative;
+						text-align: center;
+						padding: 20px 0 25px 0;
+						background: #00162e;
+						color: #fff;
+						img {
+							position: absolute;
+							left: 20px;
+							top: -40px;
+						}
+						
+					}
+				}
+				.box_info {
+					padding: 10px;
+					border: 1px solid #e6e6e6;
+					.box_price {
+						display: flex ;
+						flex-direction: row ;
+						justify-content: space-between ;
+						align-items: center ;
+						align-content: center ;
+						padding: 10px 0;
+						.price {
+							color: #df0002;
+							font-size: 20px;
+						}
+						.price_sale {
+							font-size: 12px;
+							color: #c9c9ca;
+						}
+						.price_percent {
+							font-size: 14px;
+							color: #df0002;
+						}
+
+					}
+					.box_desc {
+						border-top: 1px solid #f3f3f3;
+						padding: 10px 0 5px 0;
+					}
+				}
+			}
+		}
+	}
+}
+
