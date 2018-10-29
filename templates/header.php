@@ -16,10 +16,12 @@
 					<button><i class="fa fa-search"></i></button>
 				</div>
 				<div class="box-cart">
+					<a href="#">
 					<span class="cart-icon">
 						<span class="number-cart"><em>2</em></span>
 						<i class="lnr lnr-cart"></i>
 					</span>
+					</a>
 				</div>
 			</div>
 		</div>

@@ -18,7 +18,7 @@ CSS information
 	}
 }
 
-.wrap:after {
+.wrap:after, .box-teacher .list-teacher:after {
 	content: "";
 	display: table;
 	clear: both;
@@ -45,7 +45,7 @@ CSS information
 	}
 }
 
-.wrap:after {
+.wrap:after, .box-teacher .list-teacher:after {
 	content: "";
 	display: table;
 	clear: both;
@@ -58,7 +58,7 @@ html {
 
 body {
 	color: #313131;
-	background: #fff;
+	background: #f2f2f2;
 	-webkit-text-size-adjust: none;
 	font-size: 108%;
 }
@@ -229,10 +229,58 @@ CSS information
 	}
 }
 
-.wrap:after {
+.wrap:after, .box-teacher .list-teacher:after {
 	content: "";
 	display: table;
 	clear: both;
+}
+
+h3.st_title {
+	text-align: center;
+	position: relative;
+	padding-bottom: 15px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	font-size: 129%;
+}
+
+@media only screen and (max-width: 767px) {
+	h3.st_title {
+		text-align: left;
+	}
+}
+
+h3.st_title:after {
+	position: absolute;
+	bottom: 0;
+	height: 2px;
+	width: 130px;
+	content: "";
+	background: #df0002;
+	left: 50%;
+	margin-left: -65px;
+}
+
+@media only screen and (max-width: 767px) {
+	h3.st_title:after {
+		left: 0;
+		margin-left: 0;
+	}
+}
+
+h3.st_title span {
+	display: inline-block;
+	position: relative;
+}
+
+h3.st_title.st_lg {
+	font-size: 200%;
+}
+
+@media only screen and (max-width: 767px) {
+	h3.st_title.st_lg {
+		font-size: 129%;
+	}
 }
 
 #header {
@@ -395,6 +443,11 @@ CSS information
 	padding: 1.5em 0;
 }
 
+#header .wrap .box-menu-search .box-cart a {
+	color: #FFF;
+	text-decoration: none;
+}
+
 #header .wrap .box-menu-search .box-cart .lnr {
 	font-size: 200%;
 }
@@ -430,6 +483,255 @@ CSS information
 	transform: translate(-50%, -50%);
 }
 
+.page-title {
+	overflow: hidden;
+	*zoom: 1;
+	background: transparent url("../images/page-title.jpg") center top no-repeat;
+	min-height: 175px;
+	margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+	.page-title {
+		background-position: -20px top;
+	}
+}
+
+.page-title .wrap {
+	padding: 4em 0;
+}
+
+@media only screen and (max-width: 767px) {
+	.page-title .wrap {
+		padding: 2em 0;
+	}
+}
+
+.page-title h2 {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 179%;
+	color: #df0002;
+}
+
+.page-title .sub-title {
+	font-size: 115%;
+	color: #262a3a;
+}
+
+.box-teacher {
+	overflow: hidden;
+	*zoom: 1;
+}
+
+.box-teacher .list-teacher li {
+	float: left;
+	width: 23.07692%;
+	margin-right: 2.5641%;
+	background: #FFF;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	border-radius: 7px;
+	border: 1px solid #e6e6e6;
+	position: relative;
+	padding: 15px;
+	text-align: center;
+	margin-top: 100px;
+}
+
+@media only screen and (max-width: 767px) {
+	.box-teacher .list-teacher li {
+		width: 49%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.box-teacher .list-teacher li {
+		margin-right: 2%;
+	}
+}
+
+.box-teacher .list-teacher li .box_img {
+	margin-top: -75px;
+	margin-bottom: 10px;
+}
+
+.box-teacher .list-teacher li h4 {
+	font-size: 129%;
+	font-weight: bold;
+	text-align: center;
+}
+
+.box-teacher .list-teacher li h4 a {
+	text-decoration: none !important;
+	color: #000;
+}
+
+.box-teacher .list-teacher li .ti-job {
+	font-size: 86%;
+	color: #898989;
+	margin: 10px 0 20px;
+}
+
+.box-teacher .list-teacher li .desc {
+	text-align: left;
+	margin-bottom: 15px;
+}
+
+.box-teacher .list-teacher li .btn {
+	margin-bottom: -15px;
+}
+
+.box-teacher .list-teacher li .btn a {
+	display: inline-block;
+	padding: 8px 20px;
+	color: #FFF;
+	background: #df0002;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	border-radius: 7px;
+	text-decoration: none !important;
+}
+
+.box-teacher .list-teacher li:nth-child(4n) {
+	margin-right: 0;
+}
+
+@media only screen and (max-width: 767px) {
+	.box-teacher .list-teacher li:nth-child(2n) {
+		margin-right: 0;
+	}
+}
+
+.box-page {
+	overflow: hidden;
+	*zoom: 1;
+	padding: 2em 0;
+}
+
+.box-page .pages {
+	overflow: hidden;
+	*zoom: 1;
+	text-align: center;
+}
+
+.box-page .pages li {
+	display: inline-block;
+}
+
+.box-page .pages li a {
+	padding: .5em;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 129%;
+	color: #b7b7b7;
+}
+
+.box-page .pages li a.active {
+	color: #000;
+}
+
+.box-page .pages li.prev-page {
+	margin-right: 1em;
+}
+
+.box-page .pages li.next-page {
+	margin-left: 1em;
+}
+
+.box-teacher-detail {
+	overflow: hidden;
+	*zoom: 1;
+	margin-bottom: 3em;
+	padding-bottom: 2em;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.box-teacher-detail .box-img-feauter {
+	width: 23.50427%;
+	float: left;
+}
+
+@media only screen and (max-width: 767px) {
+	.box-teacher-detail .box-img-feauter {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.box-teacher-detail .box-img-feauter {
+		text-align: center;
+		margin-bottom: 1em;
+	}
+}
+
+.box-teacher-detail .box-img-feauter .box-comment {
+	text-align: center;
+	padding-top: 1em;
+}
+
+.box-teacher-detail .box-img-feauter .box-comment span {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.box-teacher-detail .box-img-feauter .box-comment .fa {
+	color: #b7b7b7;
+	margin-right: .3em;
+	font-size: 129%;
+}
+
+.box-teacher-detail .box_info {
+	width: 73.93162%;
+	float: right;
+}
+
+@media only screen and (max-width: 767px) {
+	.box-teacher-detail .box_info {
+		width: 100%;
+	}
+}
+
+.box-teacher-detail h3 {
+	font-size: 179%;
+	font-weight: bold;
+	color: #000;
+	position: relative;
+	padding-bottom: .2em;
+	margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 767px) {
+	.box-teacher-detail h3 {
+		text-align: center;
+	}
+}
+
+.box-teacher-detail h3:after {
+	position: absolute;
+	bottom: 0;
+	height: 2px;
+	width: 130px;
+	content: "";
+	background: #df0002;
+	left: 0;
+}
+
+@media only screen and (max-width: 767px) {
+	.box-teacher-detail h3:after {
+		left: 50%;
+		margin-left: -65px;
+	}
+}
+
+.box-teacher-detail .text-info-detail {
+	font-size: 115%;
+}
+
 /* ===================================================================
 CSS information
 
@@ -448,35 +750,10 @@ CSS information
 	}
 }
 
-.wrap:after {
+.wrap:after, .box-teacher .list-teacher:after {
 	content: "";
 	display: table;
 	clear: both;
-}
-
-.con_courses h3.st_title {
-	text-align: center;
-	position: relative;
-	padding-bottom: 15px;
-	margin-bottom: 30px;
-	text-transform: uppercase;
-	font-size: 129%;
-}
-
-.con_courses h3.st_title:after {
-	position: absolute;
-	bottom: 0;
-	height: 2px;
-	width: 130px;
-	content: "";
-	background: #df0002;
-	left: 50%;
-	margin-left: -65px;
-}
-
-.con_courses h3.st_title span {
-	display: inline-block;
-	position: relative;
 }
 
 .con_courses .box_courses {
@@ -522,7 +799,7 @@ CSS information
 	.con_courses .box_courses .box_course {
 		width: 100%;
 		border-bottom: 1px solid #f3f3f3;
-		margin: 0 15px 15px 15px;
+		margin: 0 0 30px;
 	}
 }
 
@@ -612,7 +889,7 @@ CSS information
 
 @media only screen and (max-width: 767px) {
 	.con_courses .box_courses .box_course .box_course_wrap .box_info h4 {
-		margin-bottom: 20px;
+		margin-bottom: 5px;
 	}
 }
 
@@ -634,6 +911,7 @@ CSS information
 @media only screen and (max-width: 767px) {
 	.con_courses .box_courses .box_course .box_course_wrap .box_info h6.name {
 		display: block;
+		font-size: 86%;
 	}
 }
 
@@ -648,11 +926,12 @@ CSS information
 
 @media only screen and (max-width: 767px) {
 	.con_courses .box_courses .box_course .box_course_wrap .box_info .box_price {
-		display: flex;
+		display: block;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: flex-start;
 		align-content: center;
+		padding: 5px 0;
 	}
 }
 
@@ -667,10 +946,17 @@ CSS information
 	}
 }
 
+@media only screen and (max-width: 767px) {
+	.con_courses .box_courses .box_course .box_course_wrap .box_info .box_price .price {
+		display: block;
+	}
+}
+
 .con_courses .box_courses .box_course .box_course_wrap .box_info .box_price .price_sale {
 	font-size: 12px;
 	color: #c9c9ca;
 	font-size: 86%;
+	text-decoration: line-through;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1170px) {
@@ -699,7 +985,7 @@ CSS information
 @media only screen and (max-width: 767px) {
 	.con_courses .box_courses .box_course .box_course_wrap .box_info .box_desc {
 		border: 0;
-		padding: 5px 0;
+		padding: 0 0;
 	}
 }
 
@@ -1032,6 +1318,12 @@ CSS information
 	}
 }
 
+@media only screen and (max-width: 767px) {
+	.con_course .box_course_wrap .box_content .box_content_wrap .box_course_other ul li .box_info .box_price .price {
+		display: block;
+	}
+}
+
 .con_course .box_course_wrap .box_content .box_content_wrap .box_course_other ul li .box_info .box_price .price_sale {
 	font-size: 12px;
 	color: #c9c9ca;
@@ -1041,6 +1333,12 @@ CSS information
 @media only screen and (min-width: 768px) and (max-width: 1170px) {
 	.con_course .box_course_wrap .box_content .box_content_wrap .box_course_other ul li .box_info .box_price .price_sale {
 		font-size: 72%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.con_course .box_course_wrap .box_content .box_content_wrap .box_course_other ul li .box_info .box_price .price_sale {
+		display: inline-block;
 	}
 }
 

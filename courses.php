@@ -10,6 +10,12 @@
 <body id="<?php echo $page; ?>">
 <?php include "./templates/header.php"; ?>
 <div id="contents">
+	<div class="page-title">
+		<div class="wrap">
+			<h2>NASA Media</h2>
+			<div class="sub-title">Nền tảng khóa học trực tuyến về kỹ năng cho lãnh đạo và quản lý trung cấp</div>
+		</div>
+	</div>
 <div class="wrap">
 	<div class="con_courses">
 		<h3 class="st_title"><span>Lãnh đạo và quản lý</span></h3>

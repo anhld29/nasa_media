@@ -9,9 +9,6 @@ CSS information
 @import "settings";
 
 .con_courses {
-	h3.st_title {
-		@include st_title();
-	}
 	.box_courses {
 		margin: 0 -15px;
 		overflow: hidden;
@@ -39,7 +36,7 @@ CSS information
 			@include mq(sp) {
 				width: 100%;
 				border-bottom: 1px solid #f3f3f3;
-				margin: 0 15px 15px 15px;
+				margin: 0 0 30px;
 			}
 			&:nth-child(4n+1) {
 				clear: left;
@@ -101,7 +98,7 @@ CSS information
 					border: 1px solid #e6e6e6;
 					h4 {
 						@include mq(sp) {
-							margin-bottom: 20px;
+							margin-bottom: 5px;
 						}
 					}
 					@include mq(sp) {
@@ -116,6 +113,7 @@ CSS information
 						font-weight: normal;
 						@include mq(sp) {
 							display: block;
+							@include fsz(12);
 						}
 					}
 					.box_price {
@@ -126,11 +124,12 @@ CSS information
 						align-content: center ;
 						padding: 10px 0;
 						@include mq(sp) {
-							display: flex ;
+							display: block; ;
 							flex-direction: column ;
 							justify-content: space-between ;
 							align-items: flex-start ;
 							align-content: center ;
+							padding: 5px 0;
 						}
 						.price {
 							color: #df0002;
@@ -138,11 +137,15 @@ CSS information
 							@include mq(tab) {
 								@include fsz(16);
 							}
+							@include mq(sp) {
+								display: block;
+							}
 						}
 						.price_sale {
 							font-size: 12px;
 							color: #c9c9ca;
 							@include fsz(12);
+							text-decoration: line-through;
 							@include mq(tab) {
 								@include fsz(10);
 							}
@@ -162,7 +165,7 @@ CSS information
 						padding: 10px 0 5px 0;
 						@include mq(sp) {
 				    		border: 0;
-				    		padding: 5px 0;
+				    		padding: 0 0;
 				    	}
 						ul {
 							margin: 0;
@@ -436,6 +439,9 @@ CSS information
 										@include mq(tab) {
 											@include fsz(16);
 										}
+										@include mq(sp) {
+											display: block;
+										}
 									}
 									.price_sale {
 										font-size: 12px;
@@ -443,6 +449,9 @@ CSS information
 										@include fsz(12);
 										@include mq(tab) {
 											@include fsz(10);
+										}
+										@include mq(sp) {
+											display: inline-block;
 										}
 									}
 									.price_percent {

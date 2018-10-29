@@ -7,7 +7,15 @@ CSS information
  style info : 印刷用
 =================================================================== */
 @import "settings";
-
+h3.st_title {
+	@include st_title();
+	&.st_lg{
+		@include fsz(28);
+		@include mq(sp) {
+			@include fsz(18);			
+		}
+	}
+}
 #header{
 	background:#262a3a;
 	.wrap{
@@ -127,6 +135,10 @@ CSS information
 				color: #FFF;
 				text-align: right;
 				padding: 1.5em 0;
+				a{
+					color: #FFF;
+					text-decoration: none;
+				}
 				.lnr{
 					@include fsz(28);
 				}
@@ -152,5 +164,172 @@ CSS information
 				}
 			}
 		}
+	}
+}
+.page-title{
+	@include clearfix;
+	background:transparent url('../images/page-title.jpg') center top no-repeat;
+	min-height: 175px;
+	margin-bottom: 50px;
+	@include mq(sp) {
+		background-position: -20px top;
+	}
+	.wrap{
+		@include cV(padding,4em 0,2em 0);
+	}
+	h2{
+		text-transform: uppercase;
+		font-weight: bold;
+		@include fsz(25);
+		color: #df0002;
+	}
+	.sub-title{
+		@include fsz(16);
+		color: #262a3a;
+	}
+}
+
+.box-teacher{
+	@include clearfix;
+	.list-teacher{
+		@extend %cf;
+		li{
+			float: left;
+			@include cV(width,wCon(270),49%);
+			@include cV(margin-right,wCon(30),2%);
+			background: #FFF;
+			@include border-radius(7px);
+			border: 1px solid #e6e6e6;
+			position: relative;
+			padding: 15px;
+			text-align: center;
+			margin-top: 100px;
+			.box_img{
+				margin-top: -75px;
+				margin-bottom: 10px;
+			}
+			h4{
+				@include fsz(18);
+				font-weight: bold;
+				text-align: center;
+				a{
+					text-decoration: none !important;
+					color: #000;
+				}
+			}
+			.ti-job{
+				@include fsz(12);
+				color: #898989;
+				margin: 10px 0 20px;
+			}
+			.desc{
+				text-align: left;
+				margin-bottom: 15px;
+			}
+			.btn{
+				margin-bottom: -15px;
+				a{
+					display: inline-block;
+					padding: 8px 20px;
+					color: #FFF;
+					background:#df0002;
+					@include border-radius(7px);
+					text-decoration: none !important;
+				}
+			}
+			&:nth-child(4n) {
+				margin-right: 0;
+			}
+			@include mq(sp) {
+				&:nth-child(2n) {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+.box-page{
+	@include clearfix;
+	padding: 2em 0;
+	.pages{
+		@include clearfix;
+		text-align: center;
+		li{
+			display: inline-block;
+			a{
+				padding: .5em;
+				display: inline-block;
+				text-decoration: none;
+				@include fsz(18);
+				color: #b7b7b7;
+				&.active{
+					color: #000;
+				}
+			}
+			&.prev-page{
+				margin-right: 1em;
+			}
+			&.next-page{
+				margin-left: 1em;
+			}
+		}
+	}
+}
+.box-teacher-detail{
+	@include clearfix;
+	margin-bottom: 3em;
+	padding-bottom: 2em;
+	border-bottom: 1px solid #e6e6e6;
+	.box-img-feauter{
+		@include cV(width,wCon(275),100%);
+		float: left;
+		@include mq(sp) {
+			text-align: center;
+			margin-bottom: 1em;
+		}
+		.box-comment{
+			text-align: center;
+			padding-top: 1em;
+			span{
+				display: inline-block;
+				margin-right: 1em;
+			}
+			.fa{
+				color: #b7b7b7;
+				margin-right: .3em;
+				@include fsz(18);
+			}
+		}
+	}
+	.box_info{
+		@include cV(width,wCon(865),100%);
+		float: right;
+	}
+	h3{
+		@include fsz(25);
+		font-weight: bold;
+		color: #000;
+		position: relative;
+		padding-bottom: .2em;
+		margin-bottom: 1em;
+		@include mq(sp) {
+			text-align: center;
+		}
+		&:after {
+			position: absolute;
+			bottom: 0;
+			height: 2px;
+			width: 130px;
+			content: "";
+			background: #df0002;
+			left: 0;
+			@include mq(sp) {
+				left: 50%;
+				margin-left: -65px;
+			}
+		}
+	}
+	.text-info-detail{
+		@include fsz(16);
 	}
 }

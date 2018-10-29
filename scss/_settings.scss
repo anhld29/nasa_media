@@ -219,6 +219,9 @@ $robo: 'Roboto', sans-serif;
 	margin-bottom: 30px;
 	text-transform: uppercase;
 	@include fsz(18);
+	@include mq(sp) {
+		text-align: left;
+	}
 	&:after {
 		position: absolute;
 		bottom: 0;
@@ -228,6 +231,10 @@ $robo: 'Roboto', sans-serif;
 		background: #df0002;
 		left: 50%;
 		margin-left: -65px;
+		@include mq(sp) {
+			left: 0;
+			margin-left: 0;
+		}
 	}
 	span {
 		display: inline-block;
