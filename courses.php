@@ -64,6 +64,7 @@
 					</div>
 					<div class="box_info">
 						<h4 class="sst_title">Khoá học lãnh đạo và quản lý</h4>
+						<h6 class="name">Phạm Thành Long</h6>
 						<div class="box_price">
 							<span class="price">599.000đ</span>
 							<span class="price_sale">  2.000.000đ    </span>
@@ -103,6 +104,7 @@
 					</div>
 					<div class="box_info">
 						<h4 class="sst_title">Khoá học lãnh đạo và quản lý</h4>
+						<h6 class="name">Phạm Thành Long</h6>
 						<div class="box_price">
 							<span class="price">599.000đ</span>
 							<span class="price_sale">  2.000.000đ    </span>
@@ -142,6 +144,7 @@
 					</div>
 					<div class="box_info">
 						<h4 class="sst_title">Khoá học lãnh đạo và quản lý</h4>
+						<h6 class="name">Phạm Thành Long</h6>
 						<div class="box_price">
 							<span class="price">599.000đ</span>
 							<span class="price_sale">  2.000.000đ    </span>
@@ -181,6 +184,7 @@
 					</div>
 					<div class="box_info">
 						<h4 class="sst_title">Khoá học lãnh đạo và quản lý</h4>
+						<h6 class="name">Phạm Thành Long</h6>
 						<div class="box_price">
 							<span class="price">599.000đ</span>
 							<span class="price_sale">  2.000.000đ    </span>
@@ -220,6 +224,7 @@
 					</div>
 					<div class="box_info">
 						<h4 class="sst_title">Khoá học lãnh đạo và quản lý</h4>
+						<h6 class="name">Phạm Thành Long</h6>
 						<div class="box_price">
 							<span class="price">599.000đ</span>
 							<span class="price_sale">  2.000.000đ    </span>
@@ -259,6 +264,7 @@
 					</div>
 					<div class="box_info">
 						<h4 class="sst_title">Khoá học lãnh đạo và quản lý</h4>
+						<h6 class="name">Phạm Thành Long</h6>
 						<div class="box_price">
 							<span class="price">599.000đ</span>
 							<span class="price_sale">  2.000.000đ    </span>
@@ -287,7 +293,7 @@
 					</div>
 				</div>
 			</li>
-			
+
 		</ul>
 	</div>
 </div>

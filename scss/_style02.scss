@@ -99,10 +99,24 @@ CSS information
 				.box_info {
 					padding: 10px;
 					border: 1px solid #e6e6e6;
+					h4 {
+						@include mq(sp) {
+							margin-bottom: 20px;
+						}
+					}
 					@include mq(sp) {
 						width: 60%;
 						border: 0;
 						padding: 0;
+					}
+					h6.name {
+						display: none;
+						color: #484848;
+						font-size: 16px;
+						font-weight: normal;
+						@include mq(sp) {
+							display: block;
+						}
 					}
 					.box_price {
 						display: flex ;
@@ -135,7 +149,7 @@ CSS information
 						}
 						.price_percent {
 							font-size: 14px;
-							color: #df0002;
+							color: #dd3d2b;
 							@include fsz(14);
 							@include mq(tab) {
 								@include fsz(12);
@@ -182,48 +196,276 @@ CSS information
 							    }
 							}
 						}
-						.star-rating {
-							overflow: hidden;
-						    position: relative;
-						    width: 80px;
-						    height: 1.618em;
-						    font-size: 1em;
-						    font-weight: 400;
-						    line-height: 1.618;
-
-						    &:before {
-						    	position: absolute;
-							    top: 0;
-							    left: 0;
-							    float: left;
-    							// opacity: .25;
-							    font-size: 13px;
-							    letter-spacing: 3px;
-							    content: "\2606\2606\2606\2606\2606";
-							    color: #ee9e13;
-							}
-						    span {
-							    float: left;
-							    overflow: hidden;
-							    position: absolute;
-							    top: 0;
-							    left: 0;
-							    padding-top: 1.5em;
-							    &:before {
-							    	color: #ee9e13;
-							    	position: absolute;
-								    top: 0;
-								    left: 0;
-							    	font-size: 13px;
-								    letter-spacing: 3px;
-								    content: "\2605\2605\2605\2605\2605";
-							    }
-							}
-						}
+						
 					}
 				}
 			}
 		}
 	}
 }
+.star-rating {
+	overflow: hidden;
+    position: relative;
+    width: 80px;
+    height: 1.618em;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.618;
 
+    &:before {
+    	position: absolute;
+	    top: 0;
+	    left: 0;
+	    float: left;
+		// opacity: .25;
+	    font-size: 13px;
+	    letter-spacing: 3px;
+	    content: "\2606\2606\2606\2606\2606";
+	    color: #ffa600;
+	}
+    span {
+	    float: left;
+	    overflow: hidden;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    padding-top: 1.5em;
+	    &:before {
+	    	color: #ffa600;
+	    	position: absolute;
+		    top: 0;
+		    left: 0;
+	    	font-size: 13px;
+		    letter-spacing: 3px;
+		    content: "\2605\2605\2605\2605\2605";
+	    }
+	}
+}
+
+// style page Course
+
+.con_course {
+	.box_course_wrap {
+		overflow: hidden;
+		margin: 0 -15px;
+		.box_content {
+			width: 64.16%;
+			float: left;
+			padding: 0 15px;
+			.box_content_wrap {
+				.sst_title {
+					@include sst_title();
+				}
+				.box_featured {
+					margin-bottom: 30px;
+					p.photo {
+						img {
+							width: 100%;
+						}
+					}
+				}
+				.box_list {
+					margin-bottom: 30px;
+					ul {
+						margin: 0;
+						padding: 0;
+						overflow: 	hidden;
+						li {
+							width: 45%;
+							float: left;
+							padding-left: 30px;
+							position: relative;
+							margin-bottom: 20px;
+							&:before {
+								position: absolute;
+								top: 5px;
+								left: 0;
+								width: 20px;
+								height: 20px;
+								content: "";
+								background: url(../images/ic_tick.png) top left no-repeat;
+							}
+							&:nth-child(odd) {
+								clear: left;
+							}
+							&:nth-child(even) {
+								float: right;
+							}
+
+						}
+					}
+				}
+				.box_teacher {
+					width: 100%;
+					display: flex ;
+					flex-direction: row ;
+					justify-content: flex-start ;
+					align-items: flex-start ;
+					align-content: center ;
+					position: relative;
+					position: relative;
+					margin-bottom: 30px;
+					.box_left {
+						width: 22%;
+						text-align: center;
+						p.photo {
+							padding-bottom: 10px;
+						}
+						p.info_left {
+							padding: 5px 0;
+						}
+					}
+					.box_right {
+						width: 78%;
+						padding: 25px 0 0px 35px;
+						h4.author {
+							color: #484848;
+							font-size: 16px;
+							margin-bottom: 15px;
+						}
+					}
+				}
+				.box_content_course {
+					overflow: 	hidden;
+					margin-bottom: 30px;
+					ul{
+						margin: 0 30px 0 0;
+						padding: 0;
+						h6 {
+							i {
+								color: $baseColor;
+							}
+						}
+						li {
+							line-height: 200%;
+							padding-bottom: 5px;
+							i {
+								color: $red;
+								margin-right: 5px;
+							}
+						}
+					}
+					.box_left {
+						width: 45%;
+						float: left;
+					}
+					.box_right {
+						width: 45%;
+						float: right;
+					}
+				}
+				.box_course_other {
+					
+					ul {
+						margin: 0;
+						padding: 0;
+						li {
+							width: 100%;
+							display: flex ;
+							flex-direction: row ;
+							justify-content: flex-start ;
+							align-items: flex-start ;
+							align-content: center ;
+							position: relative;
+							position: relative;
+							margin-bottom: 30px;
+							&:before {
+								position: absolute;
+								top: 0;
+								left: 26%;
+								right: 0;
+								height: 1px;
+								content: "";
+								background: #f3f3f3;
+							}
+							&:after {
+								position: absolute;
+								bottom: 0;
+								left: 26%;
+								right: 0;
+								height: 1px;
+								content: "";
+								background: #f3f3f3;
+							}
+
+							p.photo {
+								width: 22%;
+							}
+							.box_info {
+								width: 78%;
+								padding: 35px 0 0px 35px;
+								// border-top: 1px solid #f3f3f3;
+								// border-bottom: 1px solid #f3f3f3;
+
+								.box_middle {
+									display: flex ;
+									flex-direction: row ;
+									justify-content: flex-start ;
+									align-items: flex-start ;
+									align-content: center ;
+									padding: 10px 0;
+									.name {
+										color: #484848;
+										font-size: 14px;
+										font-weight: normal;
+										margin-right: 15px;
+									}
+								}
+								.box_price {
+									display: flex ;
+									flex-direction: row ;
+									justify-content: flex-start ;
+									align-items: flex-end ;
+									align-content: center ;
+									margin: 10px 0;
+									@include mq(sp) {
+										display: flex ;
+										flex-direction: column ;
+										justify-content: flex-start ;
+										align-items: flex-start ;
+										align-content: center ;
+									}
+									span {
+										padding-right: 15px;
+										display: inline-block;
+										vertical-align: bottom;    line-height: 100%;
+									}
+									.price {
+										color: #df0002;
+										@include fsz(20);
+										@include mq(tab) {
+											@include fsz(16);
+										}
+									}
+									.price_sale {
+										font-size: 12px;
+										color: #c9c9ca;
+										@include fsz(12);
+										@include mq(tab) {
+											@include fsz(10);
+										}
+									}
+									.price_percent {
+										font-size: 14px;
+										color: #dd3d2b;
+										@include fsz(14);
+										@include mq(tab) {
+											@include fsz(12);
+										}
+									}
+
+								}
+							}
+						}
+					}
+				}
+			}
+
+		}
+		.box_sidebar {
+			width: 35.33%;
+			float: left;
+			padding: 0 15px;
+		}
+	}
+}
