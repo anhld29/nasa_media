@@ -42,5 +42,115 @@ CSS information
 				z-index: -1;			
 			}
 		}
+		.box-menu-search{
+			width: wCon(1030);
+			float: right;
+			.list-main-menu{
+				width: wCon(660,1030);
+				float: left;
+				text-align: right;
+				li{
+					display: inline-block;
+					padding: 0 1em;
+					a{
+						font-family: $robo;
+						color: #FFF;
+						text-transform: uppercase;
+						@include fsz(20);
+						text-decoration: none;
+						padding:1.2em 0;
+						display: block;
+						position: relative;
+						text-align: center;
+						&:before{
+							width: 100%;
+							height: 5px;
+							background:red;
+							content: "";
+							position: absolute;
+							left: 0;
+							bottom: -2px;
+							@include transition(all .5s ease);
+							@include transform(scale(0));
+						}
+						&:hover{
+							&:before{
+								@include transform(scale(1));
+							}
+						}
+					}
+				}
+			}
+			.box-search{
+				width: wCon(300,1030);
+				float: left;
+				padding: 1em 0 1em 1em;
+				position: relative;
+				input[type='text'] {
+					width: 100%;
+					padding: 1em;
+					@include border-radius(5em);
+					border: none;
+					background:#FFF;
+					outline: none;
+					color: #999999;
+					&::-webkit-input-placeholder { 
+					 color: #999999;
+					}
+					&::-moz-placeholder {
+					 color: #999999;
+					}
+					&:-ms-input-placeholder {
+					 color: #999999;
+					}
+					&:-moz-placeholder {
+					 color: #999999;
+					}					
+				}
+				button{
+					position: absolute;
+					right: 0;
+					top: 50%;
+					@include transform(translate(0,-50%));
+					background: none;
+					border: none;
+					padding: 1em;
+					.fa{
+						@include fsz(18);
+						color: #999999;
+					}
+				}
+			}
+			.box-cart{
+				width: wCon(70,1030);
+				float: right;
+				color: #FFF;
+				text-align: right;
+				padding: 1.5em 0;
+				.lnr{
+					@include fsz(28);
+				}
+				.cart-icon{
+					display: inline-block;
+					position: relative;
+					.number-cart{
+						position: absolute;
+						top: -8px;
+						right: -5px;
+						background:#FFF;
+						color: red;
+						width: 1.5em;
+						height: 1.5em;
+						@include border-radius(50%);
+						em{
+							position: absolute;
+							left: 50%;
+							top: 50%;
+							@include transform(translate(-50%,-50%));
+						}
+					}
+				}
+			}
+		}
 	}
 }

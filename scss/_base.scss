@@ -40,7 +40,7 @@ body {
 	}
 }
 body,pre,input,textarea,select {
-	font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,sans-serif;
+	font-family: $robo;
 }
 input,select,textarea {
 	font-size: 100%;
@@ -88,7 +88,7 @@ body {
 
 // border-box
 * {
-	// @include box-sizing(border-box);
+	@include box-sizing(border-box);
 }
 
 
