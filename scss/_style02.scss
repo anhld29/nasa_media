@@ -13,26 +13,85 @@ CSS information
 		@include st_title();
 	}
 	.box_courses {
-		margin: 0 15px;
+		margin: 0 -15px;
 		overflow: hidden;
+		padding: 0;
+		@include mq(tab) {
+			margin: 0 -10px;
+		}
+		@include mq(sp) {
+			margin: 0;
+		}
+
 		.box_course {
 			width: 25%;
 			float: left;
+			margin-bottom: 30px;
+			@include mq(tab) {
+				width: 33.33%;
+				&:nth-child(3n+1) {
+					clear: left;
+					@include mq(sp) {
+						clear: none;
+					}
+				}
+			}
+			@include mq(sp) {
+				width: 100%;
+				border-bottom: 1px solid #f3f3f3;
+				margin: 0 15px 15px 15px;
+			}
+			&:nth-child(4n+1) {
+				clear: left;
+				@include mq(tab) {
+					clear: none;
+				}
+				@include mq(sp) {
+					clear: none;
+				}
+			}
 			.box_course_wrap {
 				padding: 0 15px;
+				@include mq(tab) {
+					padding: 0 10px;
+				}
+				@include mq(sp) {
+					display: flex ;
+					flex-direction: row ;
+					justify-content: space-between ;
+					align-items: flex-start ;
+					align-content: center ;
+					padding: 0;
+				}
 				.box_top {
 					border-radius: 5px 5px 0 0;
 					position: relative;
+					@include mq(sp) {
+						width: 35%;
+						border-radius: 0;
+					}
+					.photo {
+						img {
+							width: 100%;
+						}
+						
+					}
 					.box_name {
 						position: relative;
 						text-align: center;
 						padding: 20px 0 25px 0;
 						background: #00162e;
 						color: #fff;
+						@include mq(sp) {
+							display: none;
+						}
 						img {
 							position: absolute;
 							left: 20px;
 							top: -40px;
+							@include mq(sp) {
+								position: relative;
+							}
 						}
 						
 					}
@@ -40,6 +99,11 @@ CSS information
 				.box_info {
 					padding: 10px;
 					border: 1px solid #e6e6e6;
+					@include mq(sp) {
+						width: 60%;
+						border: 0;
+						padding: 0;
+					}
 					.box_price {
 						display: flex ;
 						flex-direction: row ;
@@ -47,23 +111,115 @@ CSS information
 						align-items: center ;
 						align-content: center ;
 						padding: 10px 0;
+						@include mq(sp) {
+							display: flex ;
+							flex-direction: column ;
+							justify-content: space-between ;
+							align-items: flex-start ;
+							align-content: center ;
+						}
 						.price {
 							color: #df0002;
-							font-size: 20px;
+							@include fsz(20);
+							@include mq(tab) {
+								@include fsz(16);
+							}
 						}
 						.price_sale {
 							font-size: 12px;
 							color: #c9c9ca;
+							@include fsz(12);
+							@include mq(tab) {
+								@include fsz(10);
+							}
 						}
 						.price_percent {
 							font-size: 14px;
 							color: #df0002;
+							@include fsz(14);
+							@include mq(tab) {
+								@include fsz(12);
+							}
 						}
 
 					}
 					.box_desc {
 						border-top: 1px solid #f3f3f3;
 						padding: 10px 0 5px 0;
+						@include mq(sp) {
+				    		border: 0;
+				    		padding: 5px 0;
+				    	}
+						ul {
+							margin: 0;
+							padding: 0;
+							display: flex ;
+							flex-direction: row ;
+							justify-content: space-between ;
+							align-items: center ;
+							align-content: center ;
+							@include mq(sp) {
+					    		align-items: flex-start ;
+					    	}
+							li {
+								@include mq(sp) {
+						    		display: none;
+						    	}
+						    	&:last-child {
+						    		@include mq(sp) {
+							    		display: block;
+							    	}
+						    	}
+								a {
+							    	text-decoration: none;
+							    	@include mq(sp) {
+							    		display: none;
+							    	}
+							    	i {
+							    		color: #c9c9ca;
+							    		margin-right: 2px;
+							    	}
+							    }
+							}
+						}
+						.star-rating {
+							overflow: hidden;
+						    position: relative;
+						    width: 80px;
+						    height: 1.618em;
+						    font-size: 1em;
+						    font-weight: 400;
+						    line-height: 1.618;
+
+						    &:before {
+						    	position: absolute;
+							    top: 0;
+							    left: 0;
+							    float: left;
+    							// opacity: .25;
+							    font-size: 13px;
+							    letter-spacing: 3px;
+							    content: "\2606\2606\2606\2606\2606";
+							    color: #ee9e13;
+							}
+						    span {
+							    float: left;
+							    overflow: hidden;
+							    position: absolute;
+							    top: 0;
+							    left: 0;
+							    padding-top: 1.5em;
+							    &:before {
+							    	color: #ee9e13;
+							    	position: absolute;
+								    top: 0;
+								    left: 0;
+							    	font-size: 13px;
+								    letter-spacing: 3px;
+								    content: "\2605\2605\2605\2605\2605";
+							    }
+							}
+						}
 					}
 				}
 			}

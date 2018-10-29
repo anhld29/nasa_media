@@ -313,22 +313,103 @@ CSS information
 }
 
 .con_courses .box_courses {
-	margin: 0 15px;
+	margin: 0 -15px;
 	overflow: hidden;
+	padding: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1170px) {
+	.con_courses .box_courses {
+		margin: 0 -10px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.con_courses .box_courses {
+		margin: 0;
+	}
 }
 
 .con_courses .box_courses .box_course {
 	width: 25%;
 	float: left;
+	margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1170px) {
+	.con_courses .box_courses .box_course {
+		width: 33.33%;
+	}
+	.con_courses .box_courses .box_course:nth-child(3n+1) {
+		clear: left;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1170px) and (max-width: 767px) {
+	.con_courses .box_courses .box_course:nth-child(3n+1) {
+		clear: none;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.con_courses .box_courses .box_course {
+		width: 100%;
+		border-bottom: 1px solid #f3f3f3;
+		margin: 0 15px 15px 15px;
+	}
+}
+
+.con_courses .box_courses .box_course:nth-child(4n+1) {
+	clear: left;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1170px) {
+	.con_courses .box_courses .box_course:nth-child(4n+1) {
+		clear: none;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.con_courses .box_courses .box_course:nth-child(4n+1) {
+		clear: none;
+	}
 }
 
 .con_courses .box_courses .box_course .box_course_wrap {
 	padding: 0 15px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1170px) {
+	.con_courses .box_courses .box_course .box_course_wrap {
+		padding: 0 10px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.con_courses .box_courses .box_course .box_course_wrap {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		align-content: center;
+		padding: 0;
+	}
+}
+
 .con_courses .box_courses .box_course .box_course_wrap .box_top {
 	border-radius: 5px 5px 0 0;
 	position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+	.con_courses .box_courses .box_course .box_course_wrap .box_top {
+		width: 35%;
+		border-radius: 0;
+	}
+}
+
+.con_courses .box_courses .box_course .box_course_wrap .box_top .photo img {
+	width: 100%;
 }
 
 .con_courses .box_courses .box_course .box_course_wrap .box_top .box_name {
@@ -339,15 +420,35 @@ CSS information
 	color: #fff;
 }
 
+@media only screen and (max-width: 767px) {
+	.con_courses .box_courses .box_course .box_course_wrap .box_top .box_name {
+		display: none;
+	}
+}
+
 .con_courses .box_courses .box_course .box_course_wrap .box_top .box_name img {
 	position: absolute;
 	left: 20px;
 	top: -40px;
 }
 
+@media only screen and (max-width: 767px) {
+	.con_courses .box_courses .box_course .box_course_wrap .box_top .box_name img {
+		position: relative;
+	}
+}
+
 .con_courses .box_courses .box_course .box_course_wrap .box_info {
 	padding: 10px;
 	border: 1px solid #e6e6e6;
+}
+
+@media only screen and (max-width: 767px) {
+	.con_courses .box_courses .box_course .box_course_wrap .box_info {
+		width: 60%;
+		border: 0;
+		padding: 0;
+	}
 }
 
 .con_courses .box_courses .box_course .box_course_wrap .box_info .box_price {
@@ -359,24 +460,144 @@ CSS information
 	padding: 10px 0;
 }
 
+@media only screen and (max-width: 767px) {
+	.con_courses .box_courses .box_course .box_course_wrap .box_info .box_price {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		align-content: center;
+	}
+}
+
 .con_courses .box_courses .box_course .box_course_wrap .box_info .box_price .price {
 	color: #df0002;
-	font-size: 20px;
+	font-size: 143%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1170px) {
+	.con_courses .box_courses .box_course .box_course_wrap .box_info .box_price .price {
+		font-size: 115%;
+	}
 }
 
 .con_courses .box_courses .box_course .box_course_wrap .box_info .box_price .price_sale {
 	font-size: 12px;
 	color: #c9c9ca;
+	font-size: 86%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1170px) {
+	.con_courses .box_courses .box_course .box_course_wrap .box_info .box_price .price_sale {
+		font-size: 72%;
+	}
 }
 
 .con_courses .box_courses .box_course .box_course_wrap .box_info .box_price .price_percent {
 	font-size: 14px;
 	color: #df0002;
+	font-size: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1170px) {
+	.con_courses .box_courses .box_course .box_course_wrap .box_info .box_price .price_percent {
+		font-size: 86%;
+	}
 }
 
 .con_courses .box_courses .box_course .box_course_wrap .box_info .box_desc {
 	border-top: 1px solid #f3f3f3;
 	padding: 10px 0 5px 0;
+}
+
+@media only screen and (max-width: 767px) {
+	.con_courses .box_courses .box_course .box_course_wrap .box_info .box_desc {
+		border: 0;
+		padding: 5px 0;
+	}
+}
+
+.con_courses .box_courses .box_course .box_course_wrap .box_info .box_desc ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+	.con_courses .box_courses .box_course .box_course_wrap .box_info .box_desc ul {
+		align-items: flex-start;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.con_courses .box_courses .box_course .box_course_wrap .box_info .box_desc ul li {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.con_courses .box_courses .box_course .box_course_wrap .box_info .box_desc ul li:last-child {
+		display: block;
+	}
+}
+
+.con_courses .box_courses .box_course .box_course_wrap .box_info .box_desc ul li a {
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+	.con_courses .box_courses .box_course .box_course_wrap .box_info .box_desc ul li a {
+		display: none;
+	}
+}
+
+.con_courses .box_courses .box_course .box_course_wrap .box_info .box_desc ul li a i {
+	color: #c9c9ca;
+	margin-right: 2px;
+}
+
+.con_courses .box_courses .box_course .box_course_wrap .box_info .box_desc .star-rating {
+	overflow: hidden;
+	position: relative;
+	width: 80px;
+	height: 1.618em;
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.618;
+}
+
+.con_courses .box_courses .box_course .box_course_wrap .box_info .box_desc .star-rating:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	float: left;
+	font-size: 13px;
+	letter-spacing: 3px;
+	content: "\2606\2606\2606\2606\2606";
+	color: #ee9e13;
+}
+
+.con_courses .box_courses .box_course .box_course_wrap .box_info .box_desc .star-rating span {
+	float: left;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-top: 1.5em;
+}
+
+.con_courses .box_courses .box_course .box_course_wrap .box_info .box_desc .star-rating span:before {
+	color: #ee9e13;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 13px;
+	letter-spacing: 3px;
+	content: "\2605\2605\2605\2605\2605";
 }
 
 /*# sourceMappingURL=../maps/common.css.map */
