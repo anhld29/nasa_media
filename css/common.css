@@ -627,7 +627,7 @@ CSS information
 
 .con_course .box_course_wrap {
 	overflow: hidden;
-	margin: 0 -15px;
+	margin: 20px -15px;
 }
 
 .con_course .box_course_wrap .box_content {
@@ -639,7 +639,7 @@ CSS information
 .con_course .box_course_wrap .box_content .box_content_wrap .sst_title {
 	position: relative;
 	padding-bottom: 10px;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 	font-size: 143%;
 }
 
