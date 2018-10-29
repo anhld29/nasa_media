@@ -9,11 +9,9 @@ CSS information
 @import "settings";
 h3.st_title {
 	@include st_title();
-	&.st_lg{
-		@include fsz(28);
-		@include mq(sp) {
-			@include fsz(18);			
-		}
+	@include fsz(28);
+	@include mq(sp) {
+		@include fsz(18);			
 	}
 }
 #header{

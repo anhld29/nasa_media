@@ -472,9 +472,58 @@ CSS information
 
 		}
 		.box_sidebar {
-			width: 35.33%;
+			width: wCon(370);
 			float: left;
-			padding: 0 15px;
+			@include cV(padding,20px 60px,10px 30px,1em);
+			background:#f5f5f5;
+			@include border-radius(9px);
+			@include clearfix;
+			.ic-item{
+				margin-bottom: 1em;
+				.fa{
+					@include fsz(20);
+					color: #df0002;
+					margin-right: .5em;
+					&.fa-mobile{
+						@include fsz(24);
+					}
+				}
+				.price{
+					@include fsz(30);
+					color: #df0002;
+					display: inline-block;
+					font-weight: bold;
+				}
+				.price_sale{
+					text-decoration: line-through;
+					color: #959595;
+					@include fsz(16);
+					margin-left: .5em;
+				}
+			}
+			.btn{
+				text-align: center;
+				a{
+					display: inline-block;
+					padding: .5em 4em;
+					background:#df0002;
+					color: #FFF;
+					text-decoration: none;
+					text-align: center;
+					@include border-radius(8em);
+					margin: 1em auto;
+					text-transform: uppercase;
+					@include fsz(16);
+				}
+			}			
+		}
+		.box-img-feauture-detail{
+			@include clearfix;
+			width: 170px;
+			height: 170px;
+			@include border-radius(50%);
+			margin: auto;
+			margin-bottom: 1em;
 		}
 	}
 }

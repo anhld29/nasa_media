@@ -190,7 +190,19 @@
 				</div>
 			</div>
 			<div class="box_sidebar">
-				right
+				<div class="box-img-feauture-detail">
+					<div class="box-img-over"><img src="images/img_techer02.png" alt=""></div>
+				</div>
+				<div class="ic-item"><i class="fa fa-user"></i> Giảng viên: Phạm Thành Long</div>
+				<div class="ic-item"><i class="fa fa-file-text"></i> Giáo trình: 59 bài giảng</div>
+				<div class="ic-item"><i class="fa fa-undo"></i> Sở hữu khóa học trọn đời</div>
+				<div class="ic-item"><i class="fa fa-mobile"></i> Học mọi lúc mọi nơi: Mobile, TV, PC</div>
+				<div class="ic-item"><i class="fa fa-gift"></i> Quà tặng biểu mẫu đi kèm</div>
+				<div class="ic-item"><i class="fa fa-user"></i> Giảng viên: Phạm Thành Long</div>
+				<div class="ic-item"><span class="price">599.000đ</span><span class="price_sale">2.000.000 đ</span></div>
+				<div class="ic-item"><i class="fa fa-dashboard"></i> Thời gian ưu đãi còn 1 ngày</div>
+				<div class="btn"><a href="#">Đăng ký ngay</a></div>
+				
 			</div>
 		</div>
 		

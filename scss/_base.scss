@@ -14,7 +14,7 @@ html {
 }
 body {
 	color: $baseColor;
-	background: #f2f2f2;
+	background: #FFF;
 	-webkit-text-size-adjust: none;
 	@include fsz($baseSize,13);
 	.ie & { @include fsz($baseSize,13.4); }

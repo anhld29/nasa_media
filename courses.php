@@ -299,8 +299,19 @@
 					</div>
 				</div>
 			</li>
-
 		</ul>
+		<div class="box-page">
+			<ul class="pages">
+				<li class="prev-page"><a href="#" class="over"><i class="fa fa-angle-left"></i></a></li>
+				<li><a href="#" class="over active">1</a></li>
+				<li><a href="#" class="over">2</a></li>
+				<li><a href="#" class="over">3</a></li>
+				<li><a href="#" class="over">4</a></li>
+				<li><a href="#" class="over">5</a></li>
+				<li class="next-page"><a href="#" class="over"><i class="fa fa-angle-right"></i></a></li>
+				<li><a href="#" class="over"><i class="fa fa-angle-double-right"></i></a></li>
+			</ul>
+		</div>		
 	</div>
 </div>
 
