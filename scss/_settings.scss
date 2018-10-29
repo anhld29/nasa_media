@@ -7,7 +7,7 @@ $experimental-support-for-svg: true;
 //----------------------------------------------//
 $bp_tab: 1170px; //tab
 $bp_sp: 767px; //sp
-
+$red: #df0002;
 @mixin mq($device,$val:null,$val2:null) {
 	@if $device == pc {
 	//pc
@@ -228,6 +228,27 @@ $robo: 'Roboto', sans-serif;
 		background: #df0002;
 		left: 50%;
 		margin-left: -65px;
+	}
+	span {
+		display: inline-block;
+		position: relative;
+	}
+}
+@mixin sst_title() {
+	// text-align: center;
+	position: relative;
+	padding-bottom: 10px;
+	margin-bottom: 25px;
+	@include fsz(20);
+	&:after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 1px;
+		width: 100%;
+		content: "";
+		background: #df0002;
+		// margin-left: -65px;
 	}
 	span {
 		display: inline-block;
