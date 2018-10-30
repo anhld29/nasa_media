@@ -5,7 +5,7 @@ $experimental-support-for-svg: true;
 //----------------------------------------------//
 // *Media Queries								//
 //----------------------------------------------//
-$bp_tab: 1170px; //tab
+$bp_tab: 1025px; //tab
 $bp_sp: 767px; //sp
 $red: #df0002;
 @mixin mq($device,$val:null,$val2:null) {
@@ -86,7 +86,7 @@ $baseSize: 14;
 $baseColor: #313131;
 
 $robo: 'Roboto', sans-serif;
-
+$roboslab: 'Roboto Slab', serif;
 //----------------------------------------------//
 // *Placeholder									//
 //----------------------------------------------//

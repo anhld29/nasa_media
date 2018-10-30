@@ -6,13 +6,13 @@ CSS information
  author     : Ability Consultant
  style info : 基本・共通設定
 =================================================================== */
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400,500,700&subset=vietnamese");
 .wrap {
 	max-width: 1170px;
 	margin: auto;
 }
 
-@media only screen and (max-width: 1170px) {
+@media only screen and (max-width: 1025px) {
 	.wrap {
 		width: 95%;
 	}
@@ -39,7 +39,7 @@ CSS information
 	margin: auto;
 }
 
-@media only screen and (max-width: 1170px) {
+@media only screen and (max-width: 1025px) {
 	.wrap {
 		width: 95%;
 	}
@@ -118,7 +118,7 @@ html.ie8 #page {
 	font-size: 100% !important;
 }
 
-@media only screen and (min-width: 1171px) {
+@media only screen and (min-width: 1026px) {
 	body .view_tab-sp, body .view_tab {
 		display: none !important;
 	}
@@ -150,7 +150,7 @@ html.ie8 #page {
 	display: none !important;
 }
 
-@media only screen and (max-width: 1170px) {
+@media only screen and (max-width: 1025px) {
 	body .view_pc {
 		display: none !important;
 	}
@@ -223,7 +223,7 @@ CSS information
 	margin: auto;
 }
 
-@media only screen and (max-width: 1170px) {
+@media only screen and (max-width: 1025px) {
 	.wrap {
 		width: 95%;
 	}
@@ -321,6 +321,12 @@ h3.st_title span {
 	z-index: -1;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+	#header .wrap .box-logo:before {
+		border-width: 70px 40px 0 0;
+	}
+}
+
 #header .wrap .box-menu-search {
 	width: 88.03419%;
 	float: right;
@@ -347,6 +353,12 @@ h3.st_title span {
 	display: block;
 	position: relative;
 	text-align: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+	#header .wrap .box-menu-search .list-main-menu li a {
+		padding: 1em 0;
+	}
 }
 
 #header .wrap .box-menu-search .list-main-menu li a:before {
@@ -381,6 +393,12 @@ h3.st_title span {
 	float: left;
 	padding: 1em 0 1em 1em;
 	position: relative;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+	#header .wrap .box-menu-search .box-search {
+		padding: 1em 0 .5em 1em;
+	}
 }
 
 #header .wrap .box-menu-search .box-search input[type='text'] {
@@ -440,6 +458,18 @@ h3.st_title span {
 	padding: 1.5em 0;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+	#header .wrap .box-menu-search .box-cart {
+		padding: 1.5em 0 1em;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#header .wrap .box-menu-search .box-cart {
+		padding: 1em 0;
+	}
+}
+
 #header .wrap .box-menu-search .box-cart a {
 	color: #FFF;
 	text-decoration: none;
@@ -485,7 +515,7 @@ h3.st_title span {
 	*zoom: 1;
 	background: transparent url("../images/page-title.jpg") center top no-repeat;
 	min-height: 175px;
-	margin-bottom: 50px;
+	margin-bottom: 35px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -557,7 +587,8 @@ h3.st_title span {
 
 .box-teacher .list-teacher li h4 {
 	font-size: 129%;
-	font-weight: bold;
+	font-weight: 700;
+	font-family: "Roboto Slab", serif;
 	text-align: center;
 }
 
@@ -700,6 +731,7 @@ h3.st_title span {
 	position: relative;
 	padding-bottom: .2em;
 	margin-bottom: 1em;
+	font-family: "Roboto Slab", serif;
 }
 
 @media only screen and (max-width: 767px) {
@@ -741,7 +773,7 @@ CSS information
 	margin: auto;
 }
 
-@media only screen and (max-width: 1170px) {
+@media only screen and (max-width: 1025px) {
 	.wrap {
 		width: 95%;
 	}
@@ -759,7 +791,7 @@ CSS information
 	padding: 0;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1170px) {
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
 	.con_courses .box_courses {
 		margin: 0 -10px;
 	}
@@ -777,7 +809,7 @@ CSS information
 	margin-bottom: 30px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1170px) {
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
 	.con_courses .box_courses .box_course {
 		width: 33.33%;
 	}
@@ -786,7 +818,7 @@ CSS information
 	}
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1170px) and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 1025px) and (max-width: 767px) {
 	.con_courses .box_courses .box_course:nth-child(3n+1) {
 		clear: none;
 	}
@@ -804,7 +836,7 @@ CSS information
 	clear: left;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1170px) {
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
 	.con_courses .box_courses .box_course:nth-child(4n+1) {
 		clear: none;
 	}
@@ -820,7 +852,7 @@ CSS information
 	padding: 0 15px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1170px) {
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
 	.con_courses .box_courses .box_course .box_course_wrap {
 		padding: 0 10px;
 	}
@@ -859,6 +891,7 @@ CSS information
 	padding: 20px 0 25px 0;
 	background: #00162e;
 	color: #fff;
+	font-family: "Roboto Slab", serif;
 }
 
 @media only screen and (max-width: 767px) {
@@ -937,7 +970,7 @@ CSS information
 	font-size: 143%;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1170px) {
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
 	.con_courses .box_courses .box_course .box_course_wrap .box_info .box_price .price {
 		font-size: 115%;
 	}
@@ -956,7 +989,7 @@ CSS information
 	text-decoration: line-through;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1170px) {
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
 	.con_courses .box_courses .box_course .box_course_wrap .box_info .box_price .price_sale {
 		font-size: 72%;
 	}
@@ -968,7 +1001,7 @@ CSS information
 	font-size: 100%;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1170px) {
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
 	.con_courses .box_courses .box_course .box_course_wrap .box_info .box_price .price_percent {
 		font-size: 86%;
 	}
@@ -1089,7 +1122,12 @@ CSS information
 @media only screen and (max-width: 767px) {
 	.con_course .box_course_wrap .box_content {
 		width: 100%;
+		padding: 0 2%;
 	}
+}
+
+.con_course .box_course_wrap .box_content .box_content_wrap .txt {
+	margin-bottom: 20px;
 }
 
 .con_course .box_course_wrap .box_content .box_content_wrap .sst_title {
@@ -1116,6 +1154,18 @@ CSS information
 
 .con_course .box_course_wrap .box_content .box_content_wrap .box_featured {
 	margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+	.con_course .box_course_wrap .box_content .box_content_wrap .box_featured {
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.con_course .box_course_wrap .box_content .box_content_wrap .box_featured {
+		margin-bottom: 1em;
+	}
 }
 
 .con_course .box_course_wrap .box_content .box_content_wrap .box_featured p.photo img {
@@ -1231,18 +1281,26 @@ CSS information
 	margin-bottom: 15px;
 }
 
+.con_course .box_course_wrap .box_content .box_content_wrap .box_teacher .box_right .fa-video-camera {
+	color: #000;
+}
+
 .con_course .box_course_wrap .box_content .box_content_wrap .box_content_course {
 	overflow: hidden;
 	margin-bottom: 30px;
 }
 
 .con_course .box_course_wrap .box_content .box_content_wrap .box_content_course ul {
-	margin: 0 30px 0 0;
+	margin: 0 30px 30px 0;
 	padding: 0;
 }
 
 .con_course .box_course_wrap .box_content .box_content_wrap .box_content_course ul h6 i {
 	color: #313131;
+}
+
+.con_course .box_course_wrap .box_content .box_content_wrap .box_content_course ul h6 .fa-video-camera {
+	color: #000;
 }
 
 .con_course .box_course_wrap .box_content .box_content_wrap .box_content_course ul li {
@@ -1372,7 +1430,11 @@ CSS information
 
 .con_course .box_course_wrap .box_content .box_content_wrap .box_course_other ul li .box_info {
 	width: 78%;
-	padding: 35px 0 0px 35px;
+	padding: 20px 0 5px 35px;
+}
+
+.con_course .box_course_wrap .box_content .box_content_wrap .box_course_other ul li .box_info h5 {
+	font-size: 143%;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1430,7 +1492,7 @@ CSS information
 	font-size: 143%;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1170px) {
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
 	.con_course .box_course_wrap .box_content .box_content_wrap .box_course_other ul li .box_info .box_price .price {
 		font-size: 115%;
 	}
@@ -1448,7 +1510,7 @@ CSS information
 	font-size: 86%;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1170px) {
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
 	.con_course .box_course_wrap .box_content .box_content_wrap .box_course_other ul li .box_info .box_price .price_sale {
 		font-size: 72%;
 	}
@@ -1466,7 +1528,7 @@ CSS information
 	font-size: 100%;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1170px) {
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
 	.con_course .box_course_wrap .box_content .box_content_wrap .box_course_other ul li .box_info .box_price .price_percent {
 		font-size: 86%;
 	}
@@ -1486,7 +1548,7 @@ CSS information
 	*zoom: 1;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1170px) {
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
 	.con_course .box_course_wrap .box_sidebar {
 		padding: 10px 30px;
 	}
@@ -1494,28 +1556,29 @@ CSS information
 
 @media only screen and (max-width: 767px) {
 	.con_course .box_course_wrap .box_sidebar {
-		padding: 1em;
+		padding: 1.5em;
 	}
 }
 
 @media only screen and (max-width: 767px) {
 	.con_course .box_course_wrap .box_sidebar {
 		width: 100%;
+		margin-bottom: 1em;
 	}
 }
 
 .con_course .box_course_wrap .box_sidebar .ic-item {
-	margin-bottom: 1em;
+	margin-bottom: .7em;
 }
 
 .con_course .box_course_wrap .box_sidebar .ic-item .fa {
-	font-size: 143%;
+	font-size: 158%;
 	color: #df0002;
 	margin-right: .5em;
 }
 
 .con_course .box_course_wrap .box_sidebar .ic-item .fa.fa-mobile {
-	font-size: 172%;
+	font-size: 186%;
 }
 
 .con_course .box_course_wrap .box_sidebar .ic-item .price {
@@ -1532,13 +1595,18 @@ CSS information
 	margin-left: .5em;
 }
 
-.con_course .box_course_wrap .box_sidebar .btn {
-	text-align: center;
+.con_course .box_course_wrap .box_sidebar .ic-item.text-italic {
+	font-style: italic;
 }
 
-.con_course .box_course_wrap .box_sidebar .btn a {
-	display: inline-block;
-	padding: .5em 4em;
+.con_course .box_course_wrap .box_sidebar .btn_reg {
+	text-align: center;
+	margin-top: 1.5em;
+}
+
+.con_course .box_course_wrap .box_sidebar .btn_reg a {
+	display: block;
+	padding: .5em 0;
 	background: #df0002;
 	color: #FFF;
 	text-decoration: none;
@@ -1553,6 +1621,23 @@ CSS information
 	font-size: 115%;
 }
 
+.con_course .box_course_wrap .box_sidebar .star-rating {
+	width: 100px;
+	display: inline-block;
+}
+
+.con_course .box_course_wrap .box_sidebar .star-rating:before {
+	font-size: 20px;
+}
+
+.con_course .box_course_wrap .box_sidebar .star-rating span {
+	padding-top: 2em;
+}
+
+.con_course .box_course_wrap .box_sidebar .star-rating span:before {
+	font-size: 20px;
+}
+
 .con_course .box_course_wrap .box-img-feauture-detail {
 	overflow: hidden;
 	*zoom: 1;
@@ -1565,6 +1650,12 @@ CSS information
 	border-radius: 50%;
 	margin: auto;
 	margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 767px) {
+	.con_course .box_course_wrap .box-img-feauture-detail {
+		display: none !important;
+	}
 }
 
 .slick-dots {
@@ -1597,6 +1688,10 @@ CSS information
 	border: 1px solid #df0002;
 	background: #df0002;
 	position: relative;
+}
+
+#list_comments .box_item {
+	padding-right: 15px;
 }
 
 .con_register {

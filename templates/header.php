@@ -4,7 +4,7 @@
 		<div class="wrap">
 			<div class="box-menu-sp view_sp">Menu</div>
 			<div class="box-logo"><a href="#" class="over"><img src="<?php echo location_file;?>images/logo.png" alt="Nasa Media"></a></div>
-			<div class="box-menu-search view_pc">
+			<div class="box-menu-search view_pc-tab">
 				<ul class="list-main-menu">
 					<li><a href="#" class="over">Giới thiệu</a></li>
 					<li><a href="#" class="over">Khóa học</a></li>
