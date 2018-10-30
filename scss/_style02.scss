@@ -641,3 +641,97 @@ CSS information
       }
     }
   }
+
+
+  .con_register {
+  	padding: 100px 0;
+  	background: url(../images/bg_login.jpg) top left;
+  	background-size: cover;
+  	.box_register {
+  		width: 270px;
+  		margin: 0 auto;
+  		border-radius: 10px;
+  		background: #fff;
+
+  		.title_register {
+  			background: $red;
+  			text-align: center;
+  			line-height: 70px;
+  			padding: 70px;
+  			border-radius: 10px 10px 0 0;
+  			padding: 0;
+  			margin: 0;
+  		}
+  		.box_complete {
+			text-align: center;
+			padding: 30px 0px;
+			h4 {
+				color: $red;
+				text-transform: uppercase;
+				padding: 10px;
+				font-size: 14px;
+			}
+			.txt_note {
+				padding-bottom: 20px;
+			}
+		}
+		a {
+			display: block;
+			text-decoration: none;
+			max-width: 90%;
+			margin: 0 auto;
+		}
+  		.frm_register {
+  			padding: 40px 20px;
+  			&.box_complete {
+  				padding: 20px;
+  			}
+  			.form-group {
+  				margin-bottom: 15px;
+  				.form-control {
+  					line-height: 40px;
+  					height: 40px;
+  					border-radius: 20px;
+  					background: #ebebeb;
+  					color: #555555;
+  					padding-left: 50px;
+  					border: 0;
+  					width: 100%;
+  				}
+  				.input_name {
+  					background: url(../images/ic_name.png) center left no-repeat #ebebeb;
+  					background-position: 10px 8px;
+  				}
+  				.input_mail {
+  					background: url(../images/ic_mail.png) center left no-repeat #ebebeb;
+  					background-position: 10px 8px;
+  				}
+  				.input_address {
+  					background: url(../images/ic_address.png) center left no-repeat #ebebeb;
+  					background-position: 10px 8px;
+  				}
+  				.btn {
+  					width: 100%;
+  				}
+  			}	
+  			
+  		}
+  	}
+  }
+
+  .btn {
+  	line-height: 40px;
+  	height: 40px;
+  	border-radius: 20px;
+  	text-align: center;
+  	border: 0;
+  	background: #ebebeb;
+  	padding: 0 30px;
+  	width: auto;
+  	font-weight: bold;
+  	&.btn-primary {
+  		background: $red;
+  		color: #fff;
+  		text-transform: uppercase;
+  	}
+  }
