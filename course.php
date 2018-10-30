@@ -2,11 +2,12 @@
 
 <!-- *** stylesheet *** -->
 <?php include "./templates/common_css.php"; ?>
-<link href="./css/<?php echo $page; ?>.css" rel="stylesheet" type="text/css" media="all">
+<link href="./css/slick.css" rel="stylesheet" type="text/css" media="all">
 
 <!-- *** javascript *** -->
 <?php include "./templates/common_js.php"; ?>
 <script src="./js/homepage.js"></script>
+<script src="./js/slick.min.js"></script>
 </head>
 
 <body id="<?php echo $page; ?>">
@@ -91,8 +92,11 @@
 					<div class="box_teacher">
 						<div class="box_left">
 							<p class="photo"><img src="./images/course/img_author.png" alt="course 01" /></p>
-							<p class="info_left"><i class="fa fa-file-alt"></i> 1693 học viên</p>
-							<p class="info_left"><i class="fa fa-file-alt"></i> 12 khóa học</p>
+							<div class="info">
+								<p class="info_left"><i class="fa fa-file-alt"></i> 1693 học viên</p>
+								<p class="info_left"><i class="fa fa-file-alt"></i> 12 khóa học</p>
+							</div>
+							
 						</div>
 						<div class="box_right">
 							<h4 class="author">Phạm Thành Long</h4>
@@ -104,12 +108,47 @@
 						</div>
 					</div>
 					<h4 class="sst_title">Nhận xét của học viên</h4>
-					<div class="box_comment">
-						
+					<div id="list_comments" class="box_comment">
+						<div class="box_item">
+							<div class="item_wrap">
+								<p class="photo"><img src="./images/course/img_sutdent1.png" alt="course 01" /></p>
+								<div class="box_info">
+									<p class="name">NGUYỄN VĂN HÙNG</p>
+									<p class="comment">Trước đây tôi cảm thấy vô cùng khó khăn khi giao việc và quản lý nhân viên, sau khi học xong khóa học về quản trị nhân sự này, tôi đã ngộ ra nhiều sai lầm trong cách quản lý của mình. Đến nay tôi đã biết cách phân công đúng người đúng việc, việc quản lý nhân viên cũng vì thế suôn sẻ hơn </p>
+								</div>
+							</div>
+						</div>
+						<div class="box_item">
+							<div class="item_wrap">
+								<p class="photo"><img src="./images/course/img_sutdent2.png" alt="course 01" /></p>
+								<div class="box_info">
+									<p class="name">NGUYỄN VĂN HÙNG</p>
+									<p class="comment">Trước đây tôi cảm thấy vô cùng khó khăn khi giao việc và quản lý nhân viên, sau khi học xong khóa học về quản trị nhân sự này, tôi đã ngộ ra nhiều sai lầm trong cách quản lý của mình. Đến nay tôi đã biết cách phân công đúng người đúng việc, việc quản lý nhân viên cũng vì thế suôn sẻ hơn </p>
+								</div>
+							</div>
+						</div>
+						<div class="box_item">
+							<div class="item_wrap">
+								<p class="photo"><img src="./images/course/img_sutdent1.png" alt="course 01" /></p>
+								<div class="box_info">
+									<p class="name">NGUYỄN VĂN HÙNG</p>
+									<p class="comment">Trước đây tôi cảm thấy vô cùng khó khăn khi giao việc và quản lý nhân viên, sau khi học xong khóa học về quản trị nhân sự này, tôi đã ngộ ra nhiều sai lầm trong cách quản lý của mình. Đến nay tôi đã biết cách phân công đúng người đúng việc, việc quản lý nhân viên cũng vì thế suôn sẻ hơn </p>
+								</div>
+							</div>
+						</div>
+						<div class="box_item">
+							<div class="item_wrap">
+								<p class="photo"><img src="./images/course/img_sutdent2.png" alt="course 01" /></p>
+								<div class="box_info">
+									<p class="name">NGUYỄN VĂN HÙNG</p>
+									<p class="comment">Trước đây tôi cảm thấy vô cùng khó khăn khi giao việc và quản lý nhân viên, sau khi học xong khóa học về quản trị nhân sự này, tôi đã ngộ ra nhiều sai lầm trong cách quản lý của mình. Đến nay tôi đã biết cách phân công đúng người đúng việc, việc quản lý nhân viên cũng vì thế suôn sẻ hơn </p>
+								</div>
+							</div>
+						</div>
+
 					</div>
 					<div class="box_course_other">
 						<h4 class="sst_title">Khóa học liên quan</h4>
-						
 						
 						<ul>
 							<li>

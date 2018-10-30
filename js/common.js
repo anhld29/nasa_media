@@ -46,3 +46,39 @@ $(function(){
 	}
 
 });
+$(document).ready(function(){
+	// slider thumbail
+    $('#list_comments').slick({
+		slidesToShow: 2,
+		slidesToScroll: 2,
+		arrows: false,
+		fade: true,
+		dots:true,
+		responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+				slidesToScroll: 2,
+                infinite: true,
+                dots: false
+              }
+            },
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+				slidesToScroll: 2,
+              }
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]   
+		// asNavFor: '.slider-nav-detail'
+	});
+ });     
