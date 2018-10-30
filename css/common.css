@@ -24,6 +24,7 @@ CSS information
 	clear: both;
 }
 
+/*icon style*/
 /* -----------------------------------------------------------
 	基本設定、リンクカラーなど
 ----------------------------------------------------------- */
@@ -51,6 +52,7 @@ CSS information
 	clear: both;
 }
 
+/*icon style*/
 html {
 	font-size: small;
 	line-height: 1.5;
@@ -235,6 +237,7 @@ CSS information
 	clear: both;
 }
 
+/*icon style*/
 h3.st_title {
 	text-align: center;
 	position: relative;
@@ -284,13 +287,45 @@ h3.st_title span {
 	background: #262a3a;
 }
 
+@media only screen and (max-width: 1025px) {
+	#header {
+		background: #df0002;
+	}
+}
+
 #header .wrap {
 	padding: 0;
 	position: relative;
 	z-index: 0;
 }
 
-#header .wrap:before {
+@media only screen and (min-width: 1026px) {
+	#header .wrap:before {
+		position: absolute;
+		right: 100%;
+		content: "";
+		background: #df0002;
+		height: 100%;
+		width: 1000px;
+		top: 0;
+		z-index: -1;
+	}
+}
+
+@media print {
+	#header .wrap:before {
+		position: absolute;
+		right: 100%;
+		content: "";
+		background: #df0002;
+		height: 100%;
+		width: 1000px;
+		top: 0;
+		z-index: -1;
+	}
+}
+
+.ie8 #header .wrap:before {
 	position: absolute;
 	right: 100%;
 	content: "";
@@ -301,6 +336,14 @@ h3.st_title span {
 	z-index: -1;
 }
 
+@media only screen and (max-width: 1025px) {
+	#header .wrap {
+		display: table;
+		width: 100%;
+		padding: 0 3%;
+	}
+}
+
 #header .wrap .box-logo {
 	background: #df0002;
 	width: 11.96581%;
@@ -308,7 +351,49 @@ h3.st_title span {
 	position: relative;
 }
 
-#header .wrap .box-logo:before {
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+	#header .wrap .box-logo {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#header .wrap .box-logo {
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 1026px) {
+	#header .wrap .box-logo:before {
+		position: absolute;
+		left: 100%;
+		content: "";
+		top: 0;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 80px 40px 0 0;
+		border-color: #df0002 transparent transparent transparent;
+		z-index: -1;
+	}
+}
+
+@media print {
+	#header .wrap .box-logo:before {
+		position: absolute;
+		left: 100%;
+		content: "";
+		top: 0;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 80px 40px 0 0;
+		border-color: #df0002 transparent transparent transparent;
+		z-index: -1;
+	}
+}
+
+.ie8 #header .wrap .box-logo:before {
 	position: absolute;
 	left: 100%;
 	content: "";
@@ -321,9 +406,15 @@ h3.st_title span {
 	z-index: -1;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1025px) {
-	#header .wrap .box-logo:before {
-		border-width: 70px 40px 0 0;
+@media only screen and (max-width: 1025px) {
+	#header .wrap .box-logo {
+		text-align: center;
+		display: table-cell;
+		vertical-align: middle;
+		float: none;
+	}
+	#header .wrap .box-logo img {
+		max-height: 50px;
 	}
 }
 
@@ -508,6 +599,33 @@ h3.st_title span {
 	-ms-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+}
+
+#header .box-menu-sp {
+	width: 25%;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 143%;
+	color: #FFF;
+}
+
+#header .box-menu-sp a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+#header .box-search-sp {
+	width: 25%;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 143%;
+	color: #FFF;
+	text-align: right;
+}
+
+#header .box-search-sp a {
+	color: #FFF;
+	text-decoration: none;
 }
 
 .page-title {
@@ -761,6 +879,154 @@ h3.st_title span {
 	font-size: 115%;
 }
 
+.fixmenu {
+	display: none;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	-webkit-transform: translate(-100%, 0);
+	-moz-transform: translate(-100%, 0);
+	-ms-transform: translate(-100%, 0);
+	-o-transform: translate(-100%, 0);
+	transform: translate(-100%, 0);
+	height: 100%;
+	background: #262a3a;
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.fixmenu .fixmenu_inner {
+	padding: 2em;
+}
+
+.fixmenu .fixmenu_inner ul li a {
+	color: #FFF;
+	text-decoration: none;
+	padding: .8em 0;
+	display: block;
+	text-transform: uppercase;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fixmenu .fixmenu_inner ul li.sub-menu a {
+	position: relative;
+}
+
+.fixmenu .fixmenu_inner ul li.sub-menu a:before, .fixmenu .fixmenu_inner ul li.sub-menu a:after {
+	font-family: FontAwesome;
+	vertical-align: middle;
+}
+
+.fixmenu .fixmenu_inner ul li.sub-menu a > * {
+	vertical-align: middle;
+}
+
+.fixmenu .fixmenu_inner ul li.sub-menu a:after {
+	content: "";
+	margin-left: .5em;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+
+.fixmenu .fixmenu_inner ul li.sub-menu a.active:before, .fixmenu .fixmenu_inner ul li.sub-menu a.active:after {
+	font-family: FontAwesome;
+	vertical-align: middle;
+}
+
+.fixmenu .fixmenu_inner ul li.sub-menu a.active > * {
+	vertical-align: middle;
+}
+
+.fixmenu .fixmenu_inner ul li.sub-menu a.active:after {
+	content: "";
+	margin-left: .5em;
+}
+
+.fixmenu .fixmenu_inner ul li ul {
+	display: none;
+}
+
+.fixmenu .fixmenu_inner ul li ul li a {
+	text-transform: none;
+	position: relative;
+	padding-left: 2em;
+}
+
+.fixmenu .fixmenu_inner ul li ul li a:after {
+	display: none;
+}
+
+.fixmenu .fixmenu_inner ul li ul li a:before {
+	content: "";
+	width: 5px;
+	height: 5px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	background: #FFF;
+	display: inline-block;
+	position: absolute;
+	left: 1em;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+
+.fixmenu .box-hotline {
+	color: #d7d7d7;
+	padding-top: 1em;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	padding-bottom: 1em;
+}
+
+.fixmenu .box-hotline p {
+	padding: 5px 0;
+}
+
+body.fix_active {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+body.fix_active #header {
+	position: absolute;
+	z-index: 999;
+	width: 100%;
+}
+
+body.fix_active.open_menu .fixbtns ul li:not(.btn_menu) {
+	opacity: 0;
+}
+
+body.fix_active .fixmenu {
+	width: 85%;
+	overflow: auto;
+	-webkit-transform: translate(0, 0);
+	-moz-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	-o-transform: translate(0, 0);
+	transform: translate(0, 0);
+}
+
 /* ===================================================================
 CSS information
 
@@ -785,6 +1051,7 @@ CSS information
 	clear: both;
 }
 
+/*icon style*/
 .con_courses .box_courses {
 	margin: 0 -15px;
 	overflow: hidden;

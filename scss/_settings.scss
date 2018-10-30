@@ -212,6 +212,36 @@ $roboslab: 'Roboto Slab', serif;
 	@include filter-gradient($c1,$c2);
 }
 
+@mixin iconStyle {
+	&:before,&:after {
+		font-family: FontAwesome;
+		vertical-align: middle;
+	}
+	>* {
+		vertical-align: middle;
+		//display: inline;
+	}
+}
+
+/*icon style*/
+@mixin icon($content:'\F105', $Pseudo:'before') {
+	@if $Pseudo == 'after' {
+		@include iconStyle;
+		&:after {
+			content: "#{$content}";
+			margin-left: .5em;
+			@content;
+		}
+	}@else {
+		@include iconStyle;
+		&:before {
+			content: "#{$content}";
+			margin-right: .5em;
+			@content;
+		}
+	}
+}
+
 @mixin st_title() {
 	text-align: center;
 	position: relative;
