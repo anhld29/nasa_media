@@ -6,7 +6,7 @@
 
 <!-- *** javascript *** -->
 <?php include "./templates/common_js.php"; ?>
-<script src="./js/homepage.js"></script>
+<!-- <script src="./js/homepage.js"></script> -->
 <script src="./js/slick.min.js"></script>
 <script>
 	$(window).bind("load resize", init);
@@ -17,38 +17,40 @@
 		}else{
 		}
 	}//init	
-	$('#list_comments').slick({
-		slidesToShow: 2,
-		slidesToScroll: 2,
-		arrows: false,
-		// fade: true,
-		dots:true,
-		responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 2,
-				slidesToScroll: 2,
-                infinite: true,
-                dots: false
-              }
-            },
-            {
-              breakpoint: 992,
-              settings: {
-                slidesToShow: 2,
-				slidesToScroll: 2,
-              }
-            },
-            {
-              breakpoint: 767,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            }
-          ]   
-		// asNavFor: '.slider-nav-detail'
+	$(function(){
+		$('#list_comments').slick({
+			slidesToShow: 2,
+			slidesToScroll: 2,
+			arrows: false,
+			// fade: true,
+			dots:true,
+			responsive: [
+	            {
+	              breakpoint: 1024,
+	              settings: {
+	                slidesToShow: 2,
+					slidesToScroll: 2,
+	                infinite: true,
+	                dots: false
+	              }
+	            },
+	            {
+	              breakpoint: 992,
+	              settings: {
+	                slidesToShow: 2,
+					slidesToScroll: 2,
+	              }
+	            },
+	            {
+	              breakpoint: 767,
+	              settings: {
+	                slidesToShow: 2,
+	                slidesToScroll: 2
+	              }
+	            }
+	          ]   
+			// asNavFor: '.slider-nav-detail'
+		});	
 	});	
 </script>
 </head>
@@ -178,6 +180,7 @@
 							<div class="box_left">
 								<p class="photo"><img src="./images/course/img_author.png" alt="course 01" /></p>
 								<div class="info">
+									<h4 class="author">Phạm Thành Long</h4>
 									<p class="info_left"><i class="fa fa-users"></i> 1693 học viên</p>
 									<p class="info_left"><i class="fa fa-file-text"></i> 12 khóa học</p>
 								</div>

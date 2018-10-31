@@ -86,7 +86,7 @@ CSS information
 						img {
 							position: absolute;
 							left: 20px;
-							top: -40px;
+							top: -30px;
 							@include mq(sp) {
 								position: relative;
 							}
@@ -95,9 +95,11 @@ CSS information
 					}
 				}
 				.box_info {
-					padding: 10px;
+					padding: 10px 15px;
 					border: 1px solid #e6e6e6;
 					h4 {
+						@include fsz(18);
+						font-weight: normal;
 						@include mq(sp) {
 							margin-bottom: 5px;
 						}
@@ -123,7 +125,7 @@ CSS information
 						justify-content: space-between ;
 						align-items: center ;
 						align-content: center ;
-						padding: 10px 0;
+						padding: 7px 0;
 						@include mq(sp) {
 							display: block; ;
 							flex-direction: column ;
@@ -135,6 +137,7 @@ CSS information
 						.price {
 							color: #df0002;
 							@include fsz(20);
+							font-weight: bold;
 							@include mq(tab) {
 								@include fsz(16);
 							}
@@ -341,10 +344,23 @@ CSS information
 							padding-bottom: 10px;
 							@include mq(sp) {
 								max-width: 30%;
+								margin-right: 
+								20px;
 							}
 						}
 						p.info_left {
 							padding: 5px 0;
+						}
+						.info {
+							h4.author {
+								color: #484848;
+								font-size: 16px;
+								margin-bottom: 5px;
+								display: none;
+								@include mq(sp) {
+									display: block;
+								}
+							}
 						}
 					}
 					.box_right {
@@ -358,6 +374,9 @@ CSS information
 							color: #484848;
 							font-size: 16px;
 							margin-bottom: 15px;
+							@include mq(sp) {
+								display: none;
+							}
 						}
 						.fa-video-camera{
 							color: #000;
@@ -526,6 +545,7 @@ CSS information
 									.price {
 										color: #df0002;
 										@include fsz(20);
+										font-weight: bold;
 										@include mq(tab) {
 											@include fsz(16);
 										}
@@ -571,6 +591,7 @@ CSS information
 			@include mq(sp) {
 				width: 100%;
 				margin-bottom: 1em;
+				float: none;
 			}
 			.ic-item{
 				margin-bottom: .7em;
@@ -753,26 +774,22 @@ CSS information
   				}
   				.btn {
   					width: 100%;
+  					line-height: 40px;
+				  	height: 40px;
+				  	border-radius: 20px;
+				  	text-align: center;
+				  	border: 0;
+				  	background: #ebebeb;
+				  	padding: 0 30px;
+				  	font-weight: bold;
+				  	&.btn-primary {
+				  		background: $red;
+				  		color: #fff;
+				  		text-transform: uppercase;
+				  	}
   				}
   			}	
   			
   		}
-  	}
-  }
-
-  .btn {
-  	line-height: 40px;
-  	height: 40px;
-  	border-radius: 20px;
-  	text-align: center;
-  	border: 0;
-  	background: #ebebeb;
-  	padding: 0 30px;
-  	width: auto;
-  	font-weight: bold;
-  	&.btn-primary {
-  		background: $red;
-  		color: #fff;
-  		text-transform: uppercase;
   	}
   }

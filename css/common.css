@@ -55,7 +55,7 @@ CSS information
 /*icon style*/
 html {
 	font-size: small;
-	line-height: 1.5;
+	line-height: 1.4;
 }
 
 body {
@@ -639,6 +639,7 @@ h3.st_title span {
 @media only screen and (max-width: 767px) {
 	.page-title {
 		background-position: -20px top;
+		min-height: 155px;
 	}
 }
 
@@ -659,9 +660,22 @@ h3.st_title span {
 	color: #df0002;
 }
 
+@media only screen and (max-width: 767px) {
+	.page-title h2 {
+		font-size: 143%;
+		margin-bottom: 5px;
+	}
+}
+
 .page-title .sub-title {
 	font-size: 115%;
 	color: #262a3a;
+}
+
+@media only screen and (max-width: 767px) {
+	.page-title .sub-title {
+		font-size: 100%;
+	}
 }
 
 .box-teacher {
@@ -724,6 +738,10 @@ h3.st_title span {
 .box-teacher .list-teacher li .desc {
 	text-align: left;
 	margin-bottom: 15px;
+	text-overflow: ellipsis;
+	white-space: pre-line;
+	overflow: hidden;
+	height: 85px;
 }
 
 .box-teacher .list-teacher li .btn {
@@ -1170,7 +1188,7 @@ CSS information
 .con_courses .box_courses .box_course .box_course_wrap .box_top .box_name img {
 	position: absolute;
 	left: 20px;
-	top: -40px;
+	top: -30px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1180,8 +1198,13 @@ CSS information
 }
 
 .con_courses .box_courses .box_course .box_course_wrap .box_info {
-	padding: 10px;
+	padding: 10px 15px;
 	border: 1px solid #e6e6e6;
+}
+
+.con_courses .box_courses .box_course .box_course_wrap .box_info h4 {
+	font-size: 129%;
+	font-weight: normal;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1218,7 +1241,7 @@ CSS information
 	justify-content: space-between;
 	align-items: center;
 	align-content: center;
-	padding: 10px 0;
+	padding: 7px 0;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1235,6 +1258,7 @@ CSS information
 .con_courses .box_courses .box_course .box_course_wrap .box_info .box_price .price {
 	color: #df0002;
 	font-size: 143%;
+	font-weight: bold;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1025px) {
@@ -1523,11 +1547,25 @@ CSS information
 @media only screen and (max-width: 767px) {
 	.con_course .box_course_wrap .box_content .box_content_wrap .box_teacher .box_left p.photo {
 		max-width: 30%;
+		margin-right: 20px;
 	}
 }
 
 .con_course .box_course_wrap .box_content .box_content_wrap .box_teacher .box_left p.info_left {
 	padding: 5px 0;
+}
+
+.con_course .box_course_wrap .box_content .box_content_wrap .box_teacher .box_left .info h4.author {
+	color: #484848;
+	font-size: 16px;
+	margin-bottom: 5px;
+	display: none;
+}
+
+@media only screen and (max-width: 767px) {
+	.con_course .box_course_wrap .box_content .box_content_wrap .box_teacher .box_left .info h4.author {
+		display: block;
+	}
 }
 
 .con_course .box_course_wrap .box_content .box_content_wrap .box_teacher .box_right {
@@ -1546,6 +1584,12 @@ CSS information
 	color: #484848;
 	font-size: 16px;
 	margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+	.con_course .box_course_wrap .box_content .box_content_wrap .box_teacher .box_right h4.author {
+		display: none;
+	}
 }
 
 .con_course .box_course_wrap .box_content .box_content_wrap .box_teacher .box_right .fa-video-camera {
@@ -1757,6 +1801,7 @@ CSS information
 .con_course .box_course_wrap .box_content .box_content_wrap .box_course_other ul li .box_info .box_price .price {
 	color: #df0002;
 	font-size: 143%;
+	font-weight: bold;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1025px) {
@@ -1831,6 +1876,7 @@ CSS information
 	.con_course .box_course_wrap .box_sidebar {
 		width: 100%;
 		margin-bottom: 1em;
+		float: none;
 	}
 }
 
@@ -2047,9 +2093,6 @@ CSS information
 
 .con_register .box_register .frm_register .form-group .btn {
 	width: 100%;
-}
-
-.btn {
 	line-height: 40px;
 	height: 40px;
 	border-radius: 20px;
@@ -2057,11 +2100,10 @@ CSS information
 	border: 0;
 	background: #ebebeb;
 	padding: 0 30px;
-	width: auto;
 	font-weight: bold;
 }
 
-.btn.btn-primary {
+.con_register .box_register .frm_register .form-group .btn.btn-primary {
 	background: #df0002;
 	color: #fff;
 	text-transform: uppercase;
