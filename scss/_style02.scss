@@ -80,6 +80,7 @@ CSS information
 						background: #00162e;
 						color: #fff;
 						font-family: $roboslab;
+						font-size: 14px;
 						@include mq(sp) {
 							display: none;
 						}

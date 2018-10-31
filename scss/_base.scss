@@ -79,7 +79,11 @@ body {
 		.view_pc-tab,.view_tab {display: none !important;}
 	}
 }
-
+#header {
+	dl, ol, ul {
+		margin: 0;
+	}
+}
 // .mouseOver
 .over {
 	.mouse & {
@@ -94,7 +98,11 @@ body {
 * {
 	@include box-sizing(border-box);
 }
-
+#homepage {
+	.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p {
+		margin: 0;
+	}
+}
 
 /* -----------------------------------------------------------
 	#page

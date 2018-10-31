@@ -1,0 +1,698 @@
+@font-face {
+	font-family: RobotoSlab;
+	src: url(./fonts/RobotoSlab-Bold.ttf);
+	font-weight: bold;
+}
+@font-face {
+	font-family: Roboto;
+	src: url(./fonts/Roboto-Regular.ttf);
+}
+@font-face {
+	font-family: RobotoBold;
+	src: url(./fonts/Roboto-Bold.ttf);
+}
+@font-face {
+	font-family: RobotoMedium;
+	src: url(./fonts/Roboto-Medium.ttf);
+}
+@font-face {
+	font-family: RobotoItalic;
+	src: url(./fonts/Roboto-Italic.ttf);
+}
+@font-face {
+	font-family: Montserrat;
+	src: url(./fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+	font-family: MontserratItalic;
+	src: url(./fonts/Montserrat-Italic.ttf);
+}
+
+.font-roboto {
+	font-family: Roboto;
+}
+.font-roboto-bold {
+	font-family: RobotoBold;
+}
+.font-roboto-slab {
+	font-family: RobotoSlab;
+}
+
+/*COMMON*/
+i.fa-star,
+i.fa-star-half-alt {
+	color: #ffbd40;
+}
+
+/* NAV ALL PAGE */
+.navbar {
+	background: #222222;
+	height: 80px;
+}
+
+/* HOME SLIDE */
+#header-slide .carousel-inner img {
+	width: 100vw;
+	height: 40vw;
+}
+
+@media screen and (max-width: 768px) {
+	#header-slide .carousel-inner img {
+		width: 100vw;
+		height: 30vh;
+	}
+}
+
+#header-slide .carousel-indicators {
+	bottom: 0px;
+}
+
+#header-slide .carousel-indicators>li {
+	border-radius: 12px;
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	border: 1px solid gray;
+}
+
+#header-slide .carousel-indicators>li.active {
+	background-color: #df0002;
+	border: 1px solid #df0002;
+}
+
+#header-slide .carousel-caption {
+	right: 50%;
+	top: 25%;
+	text-align: center;
+	font-family: "Montserrat";
+}
+
+#header-slide .carousel-caption button {
+	margin-top: 3vw;
+	font-size: 1.8vw;
+	font-family: Roboto;
+	border-radius: 16pt;
+	font-weight: normal;
+}
+
+.home-slide-text-1 {
+	font-size: 1.7vw;
+	color: black;
+	font-family: Montserrat;
+	margin-bottom: 0px;
+}
+
+.home-slide-text-2 {
+	font-size: 6vw;
+	color: red;
+	font-family: Montserrat;
+	font-weight: bold;
+	margin-bottom: 0px;
+
+}
+
+.home-slide-text-3 {
+	font-weight: bold;
+	font-size: 3vw;
+	color: black;
+	font-family: Montserrat;
+	font-weight: bold;
+	margin-bottom: 0px;
+
+}
+
+/*Home danh sach khoa hoc*/
+.home-block-caption {
+	margin-top: 36px;
+	text-align: center;
+	font-size: 32px;
+	font-family: RobotoBold;
+}
+
+.home-block-caption>.bottom-boder-caption {
+	width: 150px;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 3px;
+	background-color: red;
+	margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+	.home-block-caption {
+		font-size: 30px;
+	}
+}
+
+.home-cate-khoa-hoc {
+	padding-top: 32px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background: red;
+	color: white;
+	height: 160px;
+	width: 160px;
+	border-radius: 8px;
+	text-align: center;
+	cursor: pointer;
+	margin-top: 30px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 768px) {
+	.home-cate-khoa-hoc {
+		zoom: 0.59;
+		margin-left: auto;
+		margin-right: auto;
+		display: inline-block;
+	}
+}
+
+.home-cate-khoa-hoc>img {
+	margin-bottom: 8px;
+}
+
+/* Start Card khoa hoc*/
+
+.info-khoa-hoc {
+	height: 368px;
+	width: 255px;
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.break-khoa-hoc {
+	height: 162px;
+}
+
+.img-khoa-hoc {
+	height: 222px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.footer-img-khoa-hoc {
+	height: 60px;
+	background-color: #00162e;
+	color: white;
+}
+
+.avata-giang-vien {
+	height: 60px;
+	width: 60px;
+	display: inline-block;
+	border-radius: 50%;
+	border: 2px solid white;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: -30px;
+	background-repeat: round;
+}
+
+.short-content-khoa-hoc {
+	border: solid 1px #e0e0e0;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	height: 150px;
+}
+
+.caption-khoa-hoc {
+	padding: 8px 15px;
+}
+
+.price-khoa-hoc {
+	padding-left: 15px;
+}
+
+.real-pay {
+	color: red;
+	font-weight: bold;
+	font-size: 14pt;
+	display: inline-block;
+	width: 100px;
+}
+
+.full-price {
+	color: gray;
+	font-size: 9pt;
+	text-decoration: line-through;
+	display: inline-block;
+	width: 75px;
+}
+
+.discount-percent {
+	color: red;
+	display: inline-block;
+}
+
+.br-line-khoa-hoc {
+	height: 1px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #d4d4d4;
+	width: 200px;
+	margin-top: 10px;
+	margin-bottom: 10px
+}
+
+.static-khoa-hoc {
+	padding-left: 15px;
+}
+
+.user-khoa-hoc {
+	display: inline-block;
+	width: 130px;
+}
+
+.user-khoa-hoc>i,
+.liked-khoa-hoc>i {
+	color: #c3c3c3;
+	font-size: 9pt;
+}
+
+.star-khoa-hoc>i {
+	font-size: 9pt;
+}
+
+/* End Card khoa hoc*/
+
+#ads-slide .carousel-inner {
+	border-radius: 10px;
+}
+
+#ads-slide .carousel-inner img {
+	width: 100%;
+	height: 420px;
+}
+
+#ads-slide .carousel-item-next.carousel-item-left,
+#ads-slide .carousel-item-prev.carousel-item-right {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+#ads-slide .carousel-item-next,
+#ads-slide .active.carousel-item-right {
+	-webkit-transform: translate3d(0, -100%, 0);
+	transform: translate3d(0, -100%, 0);
+}
+
+#ads-slide .carousel-item-prev,
+#ads-slide .active.carousel-item-left {
+	-webkit-transform: translate3d(0, +100%, 0);
+	transform: translate3d(0, +100, 0);
+}
+
+#ads-slide .carousel-indicators {
+	position: absolute;
+	top: 167px;
+	bottom: 0;
+	height: 40px;
+	right: -80px;
+	left: auto;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+#ads-slide .carousel-indicators>li {
+	border-radius: 11px;
+	width: 11px;
+	height: 11px;
+	border: 1px solid #f00;
+	background-color: #000;
+}
+
+#ads-slide .carousel-indicators>li.active {
+	background-color: #fff;
+	border: 1px solid #fff;
+}
+
+#ads-slide .carousel-caption {
+	text-align: left;
+}
+
+.home-ads-text-1 {
+	font-size: 12pt;
+}
+
+.home-ads-text-2 {
+	font-size: 26pt;
+	height: 120px;
+}
+
+.home-ads-text-3 {
+	font-size: 14pt;
+	height: 80px;
+}
+
+.sm-ads {
+	height: 420px;
+	border-radius: 10px;
+	background-color: #262a3a;
+	padding-top: 100px;
+}
+
+.sm-ads-content {
+	border: 2px solid white;
+	width: 240px;
+	height: 190px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	color: white;
+	text-align: center;
+	font-size: 30pt;
+	padding-top: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+	.con-slide-gv .col-8 {
+		max-width: 100%;
+		flex: 1;
+	}
+
+	.con-slide-gv .col-4 {
+		display: none;
+	}
+
+
+	#ads-slide {
+		zoom: 0.6;
+	}
+
+}
+
+.hop-tac-gv {
+	background: #df0002;
+	margin-left: 0px;
+	margin-right: 0px;
+	height: 80px;
+	color: white;
+	font-size: 18px;
+}
+
+.hop-tac-01 {
+	padding-top: 12px;
+	text-align: center;
+}
+
+.hop-tac-02 {
+	padding-top: 22px;
+}
+
+.hop-tac-03 {
+	padding-top: 20px;
+	text-align: center;
+}
+
+.hop-tac-03>button {
+	border: 2px solid white;
+	background: #00162e;
+	width: 110px;
+}
+
+/* Combo khoa hoc */
+.img-discount-combo-khoa-hoc {
+	height: 62px;
+	padding-left: 10px;
+	padding-top: 10px;
+	color: white;
+	background-repeat: no-repeat;
+	border-top-left-radius: 5px;
+}
+
+.break-combo-khoa-hoc {
+	height: 100px;
+}
+
+
+@media screen and (max-width: 768px) {
+	.con-hop-tac {
+		display: none;
+	}
+}
+
+.real-pay-combo {
+	color: red;
+	font-weight: bold;
+	font-size: 14pt;
+	display: inline-block;
+	width: 140px;
+}
+
+.full-price-combo {
+	color: gray;
+	font-size: 9pt;
+	text-decoration: line-through;
+	display: inline-block;
+	width: 86px;
+	text-align: center;
+}
+
+/* End combo khoa hoc */
+
+.giang-vien-tieu-bieu {
+	height: 465px;
+	background-color: #f2f2f2;
+	width: 100%;
+}
+
+.slide-giang-vien {
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 48px;
+}
+
+.item-gv {
+	height: 310px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.break-div-gv {
+	height: 85px;
+}
+
+.bg-div-gv {
+	height: 225px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.div-avata-gv {
+	width: 185px;
+	height: 155px;
+	margin-left: 39px;
+	border-radius: 10px;
+	display: inline-block;
+	margin-top: -85px;
+	background-repeat: round;
+}
+
+.div-name-gv {
+	font-weight: bold;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.div-title-gv {
+	text-align: center;
+	font-size: 10pt;
+	color: #bebebe;
+	margin-top: 10px;
+}
+
+.div-xem-gv {
+	text-align: center;
+	margin-top: 45px;
+}
+
+@media screen and (max-width: 768px) {
+	.bg-div-gv {
+		height: 175px;
+	}
+
+	.div-avata-gv {
+		width: 100px;
+		height: 100px;
+		margin-top: -52px;
+		margin-left: 27px;
+	}
+
+	.div-xem-gv {
+		zoom: 0.6;
+		margin-top: 14px;
+	}
+
+	.slide-giang-vien button {
+		display: none;
+	}
+}
+
+.chia-se-img {
+	text-align: center;
+}
+
+.chia-se-img>img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	margin-left: 12px;
+	margin-right: 12px;
+	opacity: 0.4;
+	cursor: pointer;
+}
+
+
+.chia-se-img>img.active {
+	opacity: 1;
+}
+
+.text-chia-se {
+	padding-left: 40px;
+}
+
+.text-chia-se>div {
+	display: none;
+}
+
+.text-chia-se>div.active {
+	display: block;
+}
+
+.menu-chia-se {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.menu-chia-se>div {
+	height: 12px;
+	width: 12px;
+	border-radius: 6px;
+	background-color: #f2f2f2;
+	border: 1px solid #898989;
+	display: inline-block;
+	cursor: pointer;
+}
+
+
+
+.menu-chia-se>div.active {
+	background-color: red;
+}
+
+.theo-doi {
+	padding-top: 100px;
+	text-align: center;
+	color: white;
+	margin-top: 40px;
+	height: 400px;
+	background-repeat: round;
+	background-image: url("../images/bg-chung-toi.png");
+}
+
+.cap-theo-doi {
+	font-size: 19pt;
+}
+
+.text-theo-doi {
+	font-size: 10pt;
+	margin-top: 15px;
+}
+
+.form-theo-doi {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+	max-width: 470px;
+}
+
+.input-theo-doi {
+	padding-left: 20px;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	height: 50px;
+	max-width: 350px;
+	border: 0;
+}
+
+.input-theo-doi:focus {
+	outline: none;
+}
+
+.dk-theo-doi {
+	vertical-align: bottom;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	display: inline-block;
+	background-color: red;
+	height: 50px;
+	width: 120px;
+	padding-top: 13px;
+	cursor: pointer;
+}
+
+.footer {
+	min-height: 342px;
+	background-color: #262a3a;
+	color: white;
+}
+
+.footer .container {
+	background-color: #262a3a;
+}
+
+.footer .footer-contact {
+	min-height: 255px;
+}
+
+.logo-footer {
+	margin-top: 30px;
+	height: 50px;
+	width: 115px;
+	background-image: url(../images/logo-nasa.png);
+	background-repeat: round;
+}
+
+.break-left-footer {
+	height: 1px;
+	background-color: #555a6f;
+	margin-top: 20px;
+}
+
+.text-left-footer {
+	margin-top: 20px;
+}
+
+.row-footer-1 {
+	margin-top: 50px;
+	font-weight: bold;
+}
+
+.row-footer-2 {
+	margin-top: 40px;
+	font-size: 10pt;
+}
+
+.row-footer-3 {
+	margin-top: 20px;
+	font-size: 10pt;
+}
+
+.row-footer-4 {
+	margin-top: 20px;
+	font-size: 10pt;
+}
