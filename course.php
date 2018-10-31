@@ -43,9 +43,10 @@
 	            },
 	            {
 	              breakpoint: 767,
+	              vertical: true,
 	              settings: {
-	                slidesToShow: 1,
-	                slidesToScroll: 1
+	                slidesToShow: 2,
+	                slidesToScroll: 2
 	              }
 	            }
 	          ]   
@@ -247,9 +248,11 @@
 										<h5>Nghệ thuật bán hàng công thức 6C</h5>
 										<div class="box_middle">
 											<h6 class="name">ThS. Đặng Thanh Vân</h6>
-											<div class="star-rating">
-										 		<span style="width:80%"><strong class="rating">4.00</strong> out of 5</span>
-										 	</div>(466)
+											<div class="box_star">
+												<div class="star-rating">
+											 		<span style="width:80%"><strong class="rating">4.00</strong> out of 5</span>
+											 	</div><span>(466)</span>
+											</div>
 										</div>
 										<div class="box_price">
 											<span class="price">599.000đ</span>
@@ -265,9 +268,11 @@
 										<h5>Nghệ thuật bán hàng công thức 6C</h5>
 										<div class="box_middle">
 											<h6 class="name">ThS. Đặng Thanh Vân</h6>
-											<div class="star-rating">
-										 		<span style="width:80%"><strong class="rating">4.00</strong> out of 5</span>
-										 	</div>(466)
+											<div class="box_star">
+												<div class="star-rating">
+											 		<span style="width:80%"><strong class="rating">4.00</strong> out of 5</span>
+											 	</div>(466)
+											</div>
 										</div>
 										<div class="box_price">
 											<span class="price">599.000đ</span>
@@ -283,9 +288,11 @@
 										<h5>Nghệ thuật bán hàng công thức 6C</h5>
 										<div class="box_middle">
 											<h6 class="name">ThS. Đặng Thanh Vân</h6>
-											<div class="star-rating">
-										 		<span style="width:80%"><strong class="rating">4.00</strong> out of 5</span>
-										 	</div>(466)
+											<div class="box_star">
+												<div class="star-rating">
+											 		<span style="width:80%"><strong class="rating">4.00</strong> out of 5</span>
+											 	</div>(466)
+											</div>
 										</div>
 										<div class="box_price">
 											<span class="price">599.000đ</span>
@@ -301,9 +308,12 @@
 										<h5>Nghệ thuật bán hàng công thức 6C</h5>
 										<div class="box_middle">
 											<h6 class="name">ThS. Đặng Thanh Vân</h6>
-											<div class="star-rating">
-										 		<span style="width:80%"><strong class="rating">4.00</strong> out of 5</span>
-										 	</div>(466)
+											<div class="box_star">
+												<div class="star-rating">
+											 		<span style="width:80%"><strong class="rating">4.00</strong> out of 5</span>
+											 	</div>(466)
+											</div>
+											
 										</div>
 										<div class="box_price">
 											<span class="price">599.000đ</span>

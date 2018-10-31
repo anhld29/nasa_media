@@ -492,7 +492,7 @@ CSS information
 							p.photo {
 								width: 22%;
 								@include mq(sp) {
-									width: 32%;
+									width: 35%;
 								}
 							}
 							.box_info {
@@ -504,8 +504,8 @@ CSS information
 									@include fsz(20);
 								}
 								@include mq(sp) {
-									padding: 0px 0 0px 10px;
-									width: 68%;
+									padding: 0px 0 30px 10px;
+									width: 65%;
 								}
 								.box_middle {
 									display: flex ;
@@ -514,12 +514,28 @@ CSS information
 									align-items: flex-start ;
 									align-content: center ;
 									padding: 10px 0;
-
+									@include mq(sp) {
+										display: block;
+										padding: 10px 0 0 0;
+									}
 									.name {
 										color: #484848;
 										font-size: 14px;
 										font-weight: normal;
-										margin-right: 15px;
+										margin-right: 20px;
+									}
+									.box_star {
+										display: flex ;
+										flex-direction: row ;
+										justify-content: flex-start ;
+										align-items: center ;
+										align-content: center ;
+										@include mq(sp) {
+											position: absolute;
+											bottom: 20px;
+											left: 37.5%;
+											width: 100%;
+										}
 									}
 								}
 								.box_price {
@@ -562,6 +578,7 @@ CSS information
 										}
 										@include mq(sp) {
 											display: inline-block;
+											padding-top: 5px;
 										}
 									}
 									.price_percent {
