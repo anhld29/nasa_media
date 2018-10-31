@@ -43,9 +43,9 @@
 	            },
 	            {
 	              breakpoint: 767,
-	              vertical: true,
 	              settings: {
 	                slidesToShow: 2,
+	              	vertical: true,
 	                slidesToScroll: 2
 	              }
 	            }
