@@ -1,4 +1,4 @@
-<?php $page = 'homepage'; include "./config/include.php"; ?>
+<?php $page = 'home'; include "./config/include.php"; ?>
 
 <!-- *** stylesheet *** -->
 <?php include "./templates/common_css.php"; ?>
@@ -129,7 +129,7 @@
 	DANH SÁCH KHÓA HỌC
 	<div class="bottom-boder-caption"></div>
 </div>
-<div class="container">
+<div class="wrap">
   <div class="row">
     <div class="col">
       <div class="home-cate-khoa-hoc">
@@ -342,7 +342,7 @@
 </div>
 
 
-<div class="container">
+<div class="wrap">
 	<div class="row">
 	    <div class="col-12 col-lg-8">
 			<div id="ads-slide" class="carousel slide" data-ride="carousel">
@@ -733,7 +733,7 @@
   </div>
 </div>
 
-<div class="container">
+<div class="wrap  d-none d-sm-block">
 	<div class="row hop-tac-gv">
 	    <div class="col-2">
 	    	
@@ -988,38 +988,39 @@
   <div class="bottom-boder-caption"></div>
 </div>
 
-<div class="container">
-  	<div class="row">
-	    <div class="col-6">
+<div class="wrap">
+  	<div class="row box_hocvien">
+      <div class="col-12 col-lg-6">
+        <div class="text-chia-se">
+          <div class="text-chia-se-1">
+            <p>1 That's how it works. From the docs.. "These classes are responsive, so you can set the order by breakpoint (e.g., .order-1.order-md-2). Includes support for 1 through 12 across all five grid tiers
+            </p>
+            <h4>Ha Van Tham <span> Kinh doanh thực phẩm sạch</span></h4>
+          </div>
+          <div class="text-chia-se-2 active">
+            <p>2 hat's how it works. From the docs.. "These classes are responsive, so you can set the order by breakpoint (e.g., .order-1.order-md-2). Includes support for 1 through 12 across all five grid tiers
+            </p>
+            <h4>Ha Van Tham <span> Kinh doanh thực phẩm sạch</span></h4>
+          </div>
+          <div class="text-chia-se-3">
+            <p>3 That's how it works. From the docs.. "These classes are responsive, so you can set the order by breakpoint (e.g., .order-1.order-md-2). Includes support for 1 through 12 across all five grid tiers
+            </p>
+            <h4>Ha Van Tham <span> Kinh doanh thực phẩm sạch</span></h4>
+          </div>
+        </div>
+      </div>
+	    <div class="col-12 col-lg-6">
 	    	<div class="chia-se-img">
 		    	<img src="./images/avata.jpeg" class="chia-se-1 btn-chia-se">
 		    	<img src="./images/gv.png" class="chia-se-2 btn-chia-se active">
 		    	<img src="./images/avata.jpeg" class="chia-se-3 btn-chia-se">
 	    	</div>
 	    </div>
-	    <div class="col-6">
-	    	<div class="text-chia-se">
-		    	<div class="text-chia-se-1">
-			    	<p>1 That's how it works. From the docs.. "These classes are responsive, so you can set the order by breakpoint (e.g., .order-1.order-md-2). Includes support for 1 through 12 across all five grid tiers
-			    	</p>
-			    	<h4>Ha Van Tham</h4>
-		    	</div>
-		    	<div class="text-chia-se-2 active">
-			    	<p>2 hat's how it works. From the docs.. "These classes are responsive, so you can set the order by breakpoint (e.g., .order-1.order-md-2). Includes support for 1 through 12 across all five grid tiers
-			    	</p>
-			    	<h4>Ha Van Tham</h4>
-		    	</div>
-		    	<div class="text-chia-se-3">
-			    	<p>3 That's how it works. From the docs.. "These classes are responsive, so you can set the order by breakpoint (e.g., .order-1.order-md-2). Includes support for 1 through 12 across all five grid tiers
-			    	</p>
-			    	<h4>Ha Van Tham</h4>
-		    	</div>
-	    	</div>
-	    </div>
+	    
    	</div>
 
   	<div class="row">
-	    <div class="col-6">
+	    <div class="col-12 col-lg-6">
 	    	<div class="menu-chia-se">
 	    		<div class="menu-chia-se-1 btn-chia-se"></div>
 	    		<div class="menu-chia-se-2 btn-chia-se active"></div>

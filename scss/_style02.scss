@@ -7,8 +7,64 @@ CSS information
  style info : 印刷用
 =================================================================== */
 @import "settings";
+#home {
+	.con_courses .box_courses .box_course:last-child {
+		margin-bottom: 0;
+	}
+	.carousel-caption {
+		@include mq(sp) {
+			left: 10%;
+			right: 10%;			
+		}
+	}
+	.box_hocvien {
+		display: flex ;
+		flex-direction: row-reverse ;
+		.chia-se-img {
+			> img {
+				width: 100px;
+			    height: 100px;
+			    border-radius: 50px;
+			    margin-left: 12px;
+			    margin-right: 12px;
+			    opacity: 0.4;
+			    cursor: pointer;
+				margin-bottom: 10px;
+				@include mq(sp) {
+					width: 70px;
+					height: 70px;
+					margin-left: 5px;
+			    	margin-right: 5px;
+				}
 
+			}
+		}
+		h4 {
+			color: $red;
+			text-transform: uppercase;
+			font-weight: normal;
+			font-size: 16px;
+			span {
+				color: #c9c9ca;
+				text-transform: none;
+				@include mq(sp) {
+					font-size: 12px;
+					font-weight: normal;
+				}
+				
+			}
+		}
+	}
+}
 .con_courses {
+	h3.st_title {
+		@include st_title();
+		@include fsz(28);
+		margin-bottom: 20px;
+		@include mq(sp) {
+			@include fsz(18);			
+		}
+	}
 	.box_courses {
 		margin: 0 -15px;
 		overflow: hidden;
@@ -36,7 +92,8 @@ CSS information
 			@include mq(sp) {
 				width: 100%;
 				border-bottom: 1px solid #f3f3f3;
-				margin: 0 0 30px;
+				margin: 0 0 20px;
+				padding-bottom: 10px;
 			}
 			&:nth-child(4n+1) {
 				clear: left;
@@ -68,6 +125,7 @@ CSS information
 						border-radius: 0;
 					}
 					.photo {
+						margin: 0;
 						img {
 							width: 100%;
 						}
@@ -76,6 +134,7 @@ CSS information
 					.box_name {
 						position: relative;
 						text-align: center;
+						margin: 0;
 						padding: 20px 0 25px 0;
 						background: #00162e;
 						color: #fff;

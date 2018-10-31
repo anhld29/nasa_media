@@ -198,7 +198,7 @@ html.ie8 #page {
 	box-sizing: border-box;
 }
 
-#homepage .h1, #homepage .h2, #homepage .h3, #homepage .h4, #homepage .h5, #homepage .h6, #homepage h1, #homepage h2, #homepage h3, #homepage h4, #homepage h5, #homepage h6, #homepage p {
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p {
 	margin: 0;
 }
 
@@ -246,51 +246,6 @@ CSS information
 }
 
 /*icon style*/
-h3.st_title {
-	text-align: center;
-	position: relative;
-	padding-bottom: 15px;
-	margin-bottom: 30px;
-	text-transform: uppercase;
-	font-size: 129%;
-	font-size: 200%;
-}
-
-@media only screen and (max-width: 767px) {
-	h3.st_title {
-		text-align: left;
-	}
-}
-
-h3.st_title:after {
-	position: absolute;
-	bottom: 0;
-	height: 2px;
-	width: 130px;
-	content: "";
-	background: #df0002;
-	left: 50%;
-	margin-left: -65px;
-}
-
-@media only screen and (max-width: 767px) {
-	h3.st_title:after {
-		left: 0;
-		margin-left: 0;
-	}
-}
-
-h3.st_title span {
-	display: inline-block;
-	position: relative;
-}
-
-@media only screen and (max-width: 767px) {
-	h3.st_title {
-		font-size: 129%;
-	}
-}
-
 #header {
 	background: #262a3a;
 }
@@ -1346,6 +1301,107 @@ CSS information
 }
 
 /*icon style*/
+#home .con_courses .box_courses .box_course:last-child {
+	margin-bottom: 0;
+}
+
+@media only screen and (max-width: 767px) {
+	#home .carousel-caption {
+		left: 10%;
+		right: 10%;
+	}
+}
+
+#home .box_hocvien {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+#home .box_hocvien .chia-se-img > img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	margin-left: 12px;
+	margin-right: 12px;
+	opacity: 0.4;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+	#home .box_hocvien .chia-se-img > img {
+		width: 70px;
+		height: 70px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+}
+
+#home .box_hocvien h4 {
+	color: #df0002;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+#home .box_hocvien h4 span {
+	color: #c9c9ca;
+	text-transform: none;
+}
+
+@media only screen and (max-width: 767px) {
+	#home .box_hocvien h4 span {
+		font-size: 12px;
+		font-weight: normal;
+	}
+}
+
+.con_courses h3.st_title {
+	text-align: center;
+	position: relative;
+	padding-bottom: 15px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	font-size: 129%;
+	font-size: 200%;
+	margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+	.con_courses h3.st_title {
+		text-align: left;
+	}
+}
+
+.con_courses h3.st_title:after {
+	position: absolute;
+	bottom: 0;
+	height: 2px;
+	width: 130px;
+	content: "";
+	background: #df0002;
+	left: 50%;
+	margin-left: -65px;
+}
+
+@media only screen and (max-width: 767px) {
+	.con_courses h3.st_title:after {
+		left: 0;
+		margin-left: 0;
+	}
+}
+
+.con_courses h3.st_title span {
+	display: inline-block;
+	position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+	.con_courses h3.st_title {
+		font-size: 129%;
+	}
+}
+
 .con_courses .box_courses {
 	margin: 0 -15px;
 	overflow: hidden;
@@ -1389,7 +1445,8 @@ CSS information
 	.con_courses .box_courses .box_course {
 		width: 100%;
 		border-bottom: 1px solid #f3f3f3;
-		margin: 0 0 30px;
+		margin: 0 0 20px;
+		padding-bottom: 10px;
 	}
 }
 
@@ -1442,6 +1499,10 @@ CSS information
 	}
 }
 
+.con_courses .box_courses .box_course .box_course_wrap .box_top .photo {
+	margin: 0;
+}
+
 .con_courses .box_courses .box_course .box_course_wrap .box_top .photo img {
 	width: 100%;
 }
@@ -1449,6 +1510,7 @@ CSS information
 .con_courses .box_courses .box_course .box_course_wrap .box_top .box_name {
 	position: relative;
 	text-align: center;
+	margin: 0;
 	padding: 20px 0 25px 0;
 	background: #00162e;
 	color: #fff;
