@@ -1328,6 +1328,10 @@ CSS information
 	margin-bottom: 10px;
 }
 
+#home .box_hocvien .chia-se-img > img.active {
+	opacity: 1;
+}
+
 @media only screen and (max-width: 767px) {
 	#home .box_hocvien .chia-se-img > img {
 		width: 70px;
