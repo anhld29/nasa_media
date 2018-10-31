@@ -2003,8 +2003,13 @@ CSS information
 	position: relative;
 }
 
+#list_comments {
+	margin-bottom: 15px;
+}
+
 #list_comments .box_item {
 	padding-right: 15px;
+	padding-bottom: 10px;
 }
 
 .con_register {
