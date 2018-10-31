@@ -2,10 +2,7 @@
 
 <!-- *** stylesheet *** -->
 <?php include "./templates/common_css.php"; ?>
-<link rel="stylesheet" href="./css/bootstrap/4.1.3/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/fontawesome/5.4.1/all.css">
-  <link rel="stylesheet" href="./css/slick/slick-theme.css">
-  <link rel="stylesheet" href="./css/home.css">
+
   <!-- <script src="./js/jquery/3.3.1/jquery.min.js"></script> -->
   <!-- <script src="./js/bootstrap/4.1.3/bootstrap.min.js"></script> -->
 <!-- *** javascript *** -->
@@ -13,8 +10,6 @@
 
 <!-- *** javascript *** -->
 <?php include "./templates/common_js.php"; ?>
-<script src="./js/bootstrap/4.1.3/bootstrap.min.js"></script>
-<script src="./js/slick.min.js"></script>
 <script type="text/javascript">
 	$(function(){
 		$('.list-teacher').slick({
