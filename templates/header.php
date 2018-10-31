@@ -27,7 +27,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="box-search-sp view_tab-sp">
+			<div class="box-search-sp menuSearch view_tab-sp">
 				<i class="fa fa-search"></i>
 			</div>
 		</div>

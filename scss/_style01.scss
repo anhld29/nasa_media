@@ -119,40 +119,6 @@ h3.st_title {
 				@include mq(tab) {
 					padding: 1em 0 .5em 1em;
 				}
-				input[type='text'] {
-					width: 100%;
-					padding: 1em;
-					@include border-radius(5em);
-					border: none;
-					background:#FFF;
-					outline: none;
-					color: #999999;
-					&::-webkit-input-placeholder { 
-					 color: #999999;
-					}
-					&::-moz-placeholder {
-					 color: #999999;
-					}
-					&:-ms-input-placeholder {
-					 color: #999999;
-					}
-					&:-moz-placeholder {
-					 color: #999999;
-					}					
-				}
-				button{
-					position: absolute;
-					right: 0;
-					top: 50%;
-					@include transform(translate(0,-50%));
-					background: none;
-					border: none;
-					padding: 1em;
-					.fa{
-						@include fsz(18);
-						color: #999999;
-					}
-				}
 			}
 			.box-cart{
 				width: wCon(70,1030);
@@ -473,6 +439,19 @@ h3.st_title {
 		}
 	}
 }
+.overlay{
+	display: none;
+	position: fixed;
+	z-index: 90;
+	top: 0;
+	right: 0;
+	@include transform(translate(100%, 0));
+	height: 100%;
+	background: none;
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+	@include transition(all 0.4s ease);
+}
 
 body.fix_active {
   position: fixed;
@@ -493,9 +472,95 @@ body.fix_active {
     overflow: auto;
     @include transform(translate(0, 0));
   }
-  // #header .box-menu-sp .fa-bars{
-  // 	&:before{
-  // 		content: "\f00d";
-  // 	}
-  // }
+  .overlay {
+    width: 100%;
+    overflow: auto;
+    @include transform(translate(0, 0));
+  }
+}
+body.fix_activeSearch {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  #header{
+  	position: absolute;
+  	z-index: 999;
+  	width: 100%;
+  }  
+  .overlay {
+    width: 100%;
+    overflow: auto;
+    @include transform(translate(0, 0));
+  }
+}
+.box-search{
+	padding: 1em 0 1em 1em;
+	position: relative;
+	@include mq(tab) {
+		padding: 1em 0 .5em 1em;
+	}
+	input[type='text'] {
+		width: 100%;
+		padding: 1em;
+		@include border-radius(5em);
+		border: none;
+		background:#FFF;
+		outline: none;
+		color: #999999;
+		&::-webkit-input-placeholder { 
+		 color: #999999;
+		}
+		&::-moz-placeholder {
+		 color: #999999;
+		}
+		&:-ms-input-placeholder {
+		 color: #999999;
+		}
+		&:-moz-placeholder {
+		 color: #999999;
+		}					
+	}
+	button{
+		position: absolute;
+		right: 0;
+		top: 50%;
+		@include transform(translate(0,-50%));
+		background: none;
+		border: none;
+		padding: 1em;
+		.fa{
+			@include fsz(18);
+			color: #999999;
+		}
+	}
+}
+
+.box-search-input-sp{
+	width: 100%;
+	padding: 10px;
+	background:#ccc;
+	position: fixed;
+	left: 0;
+	z-index: 100;
+	display: none;
+	.box-search{
+		width: 100%;
+		padding: 0;
+	}
+	.btn_close{
+		text-align: center;
+		position: relative;
+		span{
+			background:#CCC;
+			position: absolute;
+			left: 50%;
+			top: 100%;
+			padding: .5em 1em;
+			@include transform(translate(-50%,0));
+			@include fsz(18);
+			@include border-radius(0 0 10px 10px);
+		}
+	}
 }

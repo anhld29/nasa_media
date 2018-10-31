@@ -5,7 +5,13 @@
 
 </div><!-- /#page -->
 
-
+<div class="box-search-input-sp view_sp">
+	<div class="box-search">
+		<input type="text" placeholder="Tìm khóa học, giảng viên.....">
+		<button><i class="fa fa-search"></i></button>
+	</div>
+	<div class="btn_close"><span><i class="fa fa-angle-double-up"></i></span></div>
+</div>
 <div class="fixmenu">
 	<div class="fixmenu_inner">
 		<div class="box_menu">
@@ -32,3 +38,4 @@
 		</div>
 	</div>
 </div><!-- /.fixmenu -->
+<div class="overlay"></div>
