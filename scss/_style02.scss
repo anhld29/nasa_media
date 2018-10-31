@@ -424,18 +424,28 @@ CSS information
 				.box_comment {
 					.box_item {
 						width: 50%;
+						@include mq(sp) {
+							margin-bottom: 10px;
+						}
 						.item_wrap {
 							display: flex ;
 							flex-direction: row ;
 							justify-content: flex-start ;
 							align-items: center ;
 							align-content: center ;
+							@include mq(sp) {
+								align-items: flex-start ;
+							}
 						}
+
 						p.photo {
 							width: 26%;
+							@include mq(sp) {
+								padding-top: 10px;
+							}
 						}
 						.box_info {
-							width: 72%;
+							width: 73%;
 							padding-left: 10px;
 							.name {
 								color: $red;
