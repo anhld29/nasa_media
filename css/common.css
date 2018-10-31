@@ -1755,6 +1755,12 @@ CSS information
 	width: 50%;
 }
 
+@media only screen and (max-width: 767px) {
+	.con_course .box_course_wrap .box_content .box_content_wrap .box_comment .box_item {
+		margin-bottom: 10px;
+	}
+}
+
 .con_course .box_course_wrap .box_content .box_content_wrap .box_comment .box_item .item_wrap {
 	display: flex;
 	flex-direction: row;
@@ -1763,12 +1769,24 @@ CSS information
 	align-content: center;
 }
 
+@media only screen and (max-width: 767px) {
+	.con_course .box_course_wrap .box_content .box_content_wrap .box_comment .box_item .item_wrap {
+		align-items: flex-start;
+	}
+}
+
 .con_course .box_course_wrap .box_content .box_content_wrap .box_comment .box_item p.photo {
 	width: 26%;
 }
 
+@media only screen and (max-width: 767px) {
+	.con_course .box_course_wrap .box_content .box_content_wrap .box_comment .box_item p.photo {
+		padding-top: 10px;
+	}
+}
+
 .con_course .box_course_wrap .box_content .box_content_wrap .box_comment .box_item .box_info {
-	width: 72%;
+	width: 73%;
 	padding-left: 10px;
 }
 
