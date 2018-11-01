@@ -1040,7 +1040,7 @@ CSS information
 			.box_info {
 				@include cV(width,wCon(675),50%,100%);
 				border: 1px solid #c6c3c3;
-				@include cV(padding,60px 160px 40px 60px,60px 160px 40px 60px,20px 10px);
+				@include cV(padding,60px 100px 40px 60px,60px 100px 40px 60px,20px 10px);
 				z-index: 2;
 				position: relative;
 				background: #fff;
@@ -1076,7 +1076,7 @@ CSS information
 					}
 				}
 				p.info {
-					padding-bottom: 60px;
+					padding-bottom: 40px;
 					font-size: 16px;
 					@include mq(sp) {
 						padding-bottom: 20px;

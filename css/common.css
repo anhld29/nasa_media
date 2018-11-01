@@ -2744,7 +2744,7 @@ CSS information
 .con_about .box_about .box_item .box_info {
 	width: 57.69231%;
 	border: 1px solid #c6c3c3;
-	padding: 60px 160px 40px 60px;
+	padding: 60px 100px 40px 60px;
 	z-index: 2;
 	position: relative;
 	background: #fff;
@@ -2766,7 +2766,7 @@ CSS information
 
 @media only screen and (min-width: 768px) and (max-width: 1025px) {
 	.con_about .box_about .box_item .box_info {
-		padding: 60px 160px 40px 60px;
+		padding: 60px 100px 40px 60px;
 	}
 }
 
@@ -2836,7 +2836,7 @@ CSS information
 }
 
 .con_about .box_about .box_item .box_info p.info {
-	padding-bottom: 60px;
+	padding-bottom: 40px;
 	font-size: 16px;
 }
 
