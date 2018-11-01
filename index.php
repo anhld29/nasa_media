@@ -124,39 +124,39 @@
 	DANH SÁCH KHÓA HỌC
 	<div class="bottom-boder-caption"></div>
 </div>
-<div class="wrap">
+<div class="wrap box-icon-top">
   <div class="row">
-    <div class="col">
+    <div class="col-4 col-lg-2">
       <div class="home-cate-khoa-hoc">
       	<img src="./images/forma.png" alt="Lãnh đạo & quản lý" width="45" height="45">
         <div>Lãnh đạo & quản lý</div>
       </div>
     </div>
-    <div class="col">
+    <div class="col-4 col-lg-2">
       <div class="home-cate-khoa-hoc">
       	<img src="./images/forma_1.png" alt="Kỹ năng chuyên nghiệp" width="45" height="45">
         <div>Kỹ năng chuyên nghiệp</div>
       </div>
     </div>
-    <div class="col">
+    <div class="col-4 col-lg-2">
       <div class="home-cate-khoa-hoc">
       	<img src="./images/forma_2.png" alt="Sản xuất & vận hành" width="45" height="45">
         <div>Sản xuất & vận hành</div>
       </div>
     </div>
-    <div class="col">
+    <div class="col-4 col-lg-2">
       <div class="home-cate-khoa-hoc">
       	<img src="./images/forma_3.png" alt="Tiếp thị bán hàng" width="45" height="45">
         <div>Tiếp thị & bán hàng</div>
       </div>
     </div>
-    <div class="col">
+    <div class="col-4 col-lg-2">
       <div class="home-cate-khoa-hoc">
       	<img src="./images/forma_4.png" alt="Tài chính & kế toán" width="45" height="45">
         <div>Tài chính & kế toán</div>
       </div>
     </div>
-    <div class="col">
+    <div class="col-4 col-lg-2">
       <div class="home-cate-khoa-hoc">
       	<img src="./images/forma_5.png" alt="Nhân sự & nhân lực" width="45" height="45">
         <div>Nhân sự & nhân lực</div>

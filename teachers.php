@@ -27,7 +27,7 @@
 						<div class="box_img"><a href="#" class="over"><img src="images/img_teach.jpg" alt="Hán Quang Dự"></a></div>
 						<h4><a href="#" class="over">Hán Quang Dự</a></h4>
 						<div class="ti-job">Giám đốc đào tạo công ty GCC Việt Nam</div>
-						<div class="desc">Chuyên gia đào tạo về phát triển bản thân và phát triển kinh doanh Hiện tại, anh đang là giám đốc đào tạo công ty GCC Việt Nam...</div>
+						<div class="desc">Chuyên gia đào tạo về phát triển bản thân và phát triển kinh doanh Hiện tại, anh đang là giám đốc đào tạo công ty GCC Việt Nam Chuyên gia đào tạo về phát triển bản thân và phát triển kinh doanh Hiện tại, anh đang là giám đốc đào tạo công ty GCC Việt Nam...</div>
 						<div class="btn"><a href="#" class="over">Xem thêm</a></div>
 					</li>
 					<li>

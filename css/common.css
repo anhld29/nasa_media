@@ -335,7 +335,7 @@ CSS information
 		width: 0;
 		height: 0;
 		border-style: solid;
-		border-width: 80px 40px 0 0;
+		border-width: 70px 37px 0 0;
 		border-color: #df0002 transparent transparent transparent;
 		z-index: -1;
 	}
@@ -350,7 +350,7 @@ CSS information
 		width: 0;
 		height: 0;
 		border-style: solid;
-		border-width: 80px 40px 0 0;
+		border-width: 70px 37px 0 0;
 		border-color: #df0002 transparent transparent transparent;
 		z-index: -1;
 	}
@@ -364,7 +364,7 @@ CSS information
 	width: 0;
 	height: 0;
 	border-style: solid;
-	border-width: 80px 40px 0 0;
+	border-width: 70px 37px 0 0;
 	border-color: #df0002 transparent transparent transparent;
 	z-index: -1;
 }
@@ -388,7 +388,7 @@ CSS information
 
 #header .wrap .box-menu-search .list-main-menu {
 	width: 64.07767%;
-	float: left;
+	float: right;
 	text-align: right;
 }
 
@@ -403,7 +403,7 @@ CSS information
 	text-transform: uppercase;
 	font-size: 143%;
 	text-decoration: none;
-	padding: 1.2em 0;
+	padding: 1.05em 0;
 	display: block;
 	position: relative;
 	text-align: center;
@@ -592,6 +592,52 @@ CSS information
 	}
 }
 
+h3.st_title {
+	text-align: center;
+	position: relative;
+	padding-bottom: 15px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	font-size: 129%;
+	font-size: 200%;
+	margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+	h3.st_title {
+		text-align: left;
+	}
+}
+
+h3.st_title:after {
+	position: absolute;
+	bottom: 0;
+	height: 2px;
+	width: 130px;
+	content: "";
+	background: #df0002;
+	left: 50%;
+	margin-left: -65px;
+}
+
+@media only screen and (max-width: 767px) {
+	h3.st_title:after {
+		left: 0;
+		margin-left: 0;
+	}
+}
+
+h3.st_title span {
+	display: inline-block;
+	position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+	h3.st_title {
+		font-size: 129%;
+	}
+}
+
 .box-teacher {
 	overflow: hidden;
 	*zoom: 1;
@@ -655,7 +701,7 @@ CSS information
 	text-overflow: ellipsis;
 	white-space: pre-line;
 	overflow: hidden;
-	height: 85px;
+	height: 79px;
 }
 
 .box-teacher .list-teacher li .btn {
@@ -1403,6 +1449,14 @@ CSS information
 @media only screen and (max-width: 767px) {
 	.con_courses h3.st_title {
 		font-size: 129%;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.con_courses h3.st_title:after {
+		left: 50%;
+		margin-left: -65px;
 	}
 }
 
@@ -1428,6 +1482,17 @@ CSS information
 	width: 25%;
 	float: left;
 	margin-bottom: 30px;
+	position: relative;
+}
+
+.con_courses .box_courses .box_course a.lnk_detail {
+	text-decoration: none !important;
+	position: absolute;
+	top: 0;
+	left: 15px;
+	right: 15px;
+	height: 100%;
+	z-index: 9;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1025px) {
@@ -1472,6 +1537,10 @@ CSS information
 
 .con_courses .box_courses .box_course .box_course_wrap {
 	padding: 0 15px;
+}
+
+.con_courses .box_courses .box_course .box_course_wrap a {
+	text-decoration: none !important;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1025px) {
@@ -1538,6 +1607,15 @@ CSS information
 	.con_courses .box_courses .box_course .box_course_wrap .box_top .box_name img {
 		position: relative;
 	}
+}
+
+.con_courses .box_courses .box_course .box_course_wrap .box_top .box_name span {
+	display: inline-block;
+	max-width: 130px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-left: 10px;
 }
 
 .con_courses .box_courses .box_course .box_course_wrap .box_info {
@@ -2323,6 +2401,13 @@ CSS information
 .con_course .box_course_wrap .box_sidebar .star-rating {
 	width: 100px;
 	display: inline-block;
+	height: 1.8em;
+}
+
+@media only screen and (max-width: 767px) {
+	.con_course .box_course_wrap .box_sidebar .star-rating {
+		height: 1.7em;
+	}
 }
 
 .con_course .box_course_wrap .box_sidebar .star-rating:before {
@@ -2498,6 +2583,100 @@ CSS information
 	background: #df0002;
 	color: #fff;
 	text-transform: uppercase;
+}
+
+.theo-doi .cap-theo-doi {
+	font-size: 30px;
+	position: relative;
+	display: inline-block;
+}
+
+@media only screen and (max-width: 767px) {
+	.theo-doi .cap-theo-doi {
+		font-size: 18px;
+	}
+}
+
+.theo-doi .cap-theo-doi:before {
+	position: absolute;
+	top: -10px;
+	left: -70px;
+	width: 46px;
+	height: 35px;
+	content: "";
+	background: url(../images/img_quote.png) center left no-repeat;
+}
+
+@media only screen and (max-width: 767px) {
+	.theo-doi .cap-theo-doi:before {
+		left: -35px;
+		width: 23px;
+		height: 18px;
+		background-size: cover;
+	}
+}
+
+.theo-doi .form-theo-doi {
+	position: relative;
+	max-width: none;
+	width: 470px;
+}
+
+@media only screen and (max-width: 767px) {
+	.theo-doi .form-theo-doi {
+		width: 100%;
+	}
+}
+
+.theo-doi .form-theo-doi .input-theo-doi {
+	padding: 0 20px;
+	border-radius: 25px;
+	height: 50px;
+	width: 100%;
+	border: 0;
+	max-width: none;
+}
+
+@media only screen and (max-width: 767px) {
+	.theo-doi .form-theo-doi .input-theo-doi {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+.theo-doi .form-theo-doi .dk-theo-doi {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+@media only screen and (max-width: 767px) {
+	.theo-doi .form-theo-doi .dk-theo-doi {
+		width: 90px;
+		right: 5%;
+	}
+}
+
+#home .home-cate-khoa-hoc {
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+	height: 140px;
+}
+
+#home .box-icon-top .row {
+	margin: 0 -8px;
+}
+
+#home .box-icon-top .col-4 {
+	padding-right: 8px;
+	padding-left: 8px;
+}
+
+@media only screen and (max-width: 767px) {
+	.footer .row-footer-1, .footer .row-footer-2 {
+		margin-top: 15px;
+	}
 }
 
 /*# sourceMappingURL=../maps/common.css.map */

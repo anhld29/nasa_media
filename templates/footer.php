@@ -9,7 +9,7 @@
 <div class="footer">
 	<div class="container">
 	  	<div class="row">
-		    <div class="col-6">
+		    <div class="col-12 col-lg-6">
 		    	<div class="left-footer">
 		    		<div class="logo-footer"></div>
 		    		<div class="break-left-footer"></div>
@@ -18,49 +18,49 @@
 		    		</div>
 		    	</div>
 		    </div>
-		    <div class="col-6">
+		    <div class="col-12 col-lg-6">
 				<div class="container">
 				  	<div class="row row-footer-1">
-					    <div class="col-4">
+					    <div class="col-6 col-lg-4">
 					    	<div>LIÊN KẾT</div>
 					    </div>
-					    <div class="col-4">
+					    <div class="col-6 col-lg-4">
 					    	<div>LIÊN HỆ</div>
 					    </div>
-					    <div class="col-4">
+					    <div class="col-4 d-none d-sm-block">
 					    	<div>KẾT NỐI</div>
 					    </div>
 					</div>
 				  	<div class="row row-footer-2">
-					    <div class="col-4">
+					    <div class="col-6 col-lg-4">
 					    	<div>Hợp tác giảng dạy</div>
 					    </div>
-					    <div class="col-4">
+					    <div class="col-6 col-lg-4">
 					    	<div>Hướng dẫn thanh toán</div>
 					    </div>
-					    <div class="col-4">
+					    <div class="col-4 d-none d-sm-block">
 					    	<div><i class="fab fa-facebook-f"></i> Facebook</div>
 					    </div>
 					</div>
 				  	<div class="row row-footer-3">
-					    <div class="col-4">
+					    <div class="col-6 col-lg-4">
 					    	<div>Điều khoản sử dụng</div>
 					    </div>
-					    <div class="col-4">
+					    <div class="col-6 col-lg-4">
 					    	<div>Hotline: 0986121019</div>
 					    </div>
-					    <div class="col-4">
+					    <div class="col-4 d-none d-sm-block">
 					    	<div><i class="fab fa-youtube"></i> Youtube</div>
 					    </div>
 					</div>
 				  	<div class="row row-footer-4">
-					    <div class="col-4">
+					    <div class="col-6 col-lg-4">
 					    	<div>Cộng tác tiên</div>
 					    </div>
-					    <div class="col-4">
+					    <div class="col-6 col-lg-4">
 					    	<div>Email: cskh.nasamedia@gmail.com</div>
 					    </div>
-					    <div class="col-4">
+					    <div class="col-4 d-none d-sm-block">
 					    	<div><i class="fab fa-google-plus-g"></i> Google +</div>
 					    </div>
 					</div>

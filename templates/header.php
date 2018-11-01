@@ -14,6 +14,7 @@
 					<li><a href="#" class="over">Giáo viên</a></li>
 					<li><a href="#" class="over">Hợp tác</a></li>
 				</ul>
+				<!--
 				<div class="box-search">
 					<input type="text" placeholder="Tìm khóa học, giảng viên.....">
 					<button><i class="fa fa-search"></i></button>
@@ -26,10 +27,12 @@
 					</span>
 					</a>
 				</div>
+				-->
 			</div>
-			<div class="box-search-sp menuSearch view_tab-sp">
+			<!-- <div class="box-search-sp menuSearch view_tab-sp">
 				<i class="fa fa-search"></i>
 			</div>
+ -->
 		</div>
 	</div>
 </div><!-- /#header -->
