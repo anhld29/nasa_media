@@ -190,7 +190,7 @@ CSS information
 					border: 1px solid #e6e6e6;
 					h4 {
 						@include fsz(18);
-						font-weight: normal;
+						font-weight: 700;
 						@include mq(sp) {
 							margin-bottom: 5px;
 						}
@@ -712,6 +712,11 @@ CSS information
 				margin-bottom: 1em;
 				float: none;
 			}
+			&.active{
+				position: fixed;
+				max-width: 370px;
+				top: 0;
+			}
 			.ic-item{
 				margin-bottom: .7em;
 				.fa{
@@ -967,6 +972,7 @@ CSS information
 		    position: absolute;
 		    right: 0;
 		    top: 0;
+		    padding-top: 15px;
 		    @include mq(sp) {
 		    	width: 90px;
 		    	right: 5%;
@@ -979,7 +985,13 @@ CSS information
 		margin-left: 0;
 		margin-right: 0;
 		width: 100%;
-		height: 140px;
+		height: 150px;
+		div{
+			@include fsz(17);
+			font-weight: 600;
+			text-align: center;
+			padding: 0 5px;
+		}
 	}
 	.box-icon-top {
 		.row {
@@ -1077,9 +1089,18 @@ CSS information
 				}
 				h3 {
 					@include sst_title02();
+					font-weight: 400;
 					@include mq(sp) {
 						font-size: 20px;
 						margin-right: 60px!important;
+					}
+					span{
+						&:after{
+							height: 5px;
+							@include border-radius(1em);
+							bottom: -15px;
+
+						}
 					}
 				}
 				position: relative;
@@ -1124,6 +1145,7 @@ CSS information
 					li {
 						// line-height: 180%;
 						margin-bottom: 0px;
+						text-align: justify;
 						i {
 							color: $red;
 							margin-right: 10px;
@@ -1182,10 +1204,32 @@ CSS information
 					}
 					h3 {
 						@include sst_title02();
+						font-weight: 400;
 						@include mq(sp) {
 							font-size: 20px;
 						}
+						span{
+							&:after{
+								height: 5px;
+								@include border-radius(1em);
+								bottom: -15px;
+
+							}
+						}
 					}
+					ul {
+						li {
+							line-height: 2;
+							i {
+								color: $red;
+							}
+							span{
+								color: $red;
+								font-weight: 500;
+								margin-right: .2em;
+							}
+						}
+					}					
 					&.item_right {
 						@include mq(sp) {
 							background: #252a3b;
@@ -1205,7 +1249,7 @@ CSS information
 						}
 						ul {
 							li {
-								color: #fff;
+								color: #fff;							
 								i {
 									color: $red;
 								}
@@ -1346,4 +1390,7 @@ CSS information
 	.theo-doi {
 		margin-top: 0;
 	}
+}
+#teachers{
+	background:#f2f2f2;
 }

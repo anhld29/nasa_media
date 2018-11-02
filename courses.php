@@ -39,16 +39,16 @@
 						</div>
 						<div class="box_desc">
 							<ul class="add-to-links">
-								 <li>
+								 <!-- <li>
 									 <a class="#" href="#" title="Add to Wishlist">
 										 <i class="fa fa-heart"></i> <span>342</span>
 									 </a>
-								 </li>
-								 <li>
+								 </li> -->
+								 <!-- <li>
 									 <a class="#" href="#" title="Add to Compare">
 										 <i class="fa fa-comments"></i> <span>10</span>
 									 </a>
-								 </li>
+								 </li> -->
 								 <li>
 								 	<div class="star-rating">
 								 	<span style="width:80%"><strong class="rating">4.00</strong> out of 5</span>
@@ -79,16 +79,16 @@
 						</div>
 						<div class="box_desc">
 							<ul class="add-to-links">
-								 <li>
+								 <!-- <li>
 									 <a class="#" href="#" title="Add to Wishlist">
 										 <i class="fa fa-heart"></i> <span>342</span>
 									 </a>
-								 </li>
-								 <li>
+								 </li> -->
+								 <!-- <li>
 									 <a class="#" href="#" title="Add to Compare">
 										 <i class="fa fa-comments"></i> <span>10</span>
 									 </a>
-								 </li>
+								 </li> -->
 								 <li>
 								 	<div class="star-rating">
 								 	<span style="width:80%"><strong class="rating">4.00</strong> out of 5</span>
@@ -119,16 +119,16 @@
 						</div>
 						<div class="box_desc">
 							<ul class="add-to-links">
-								 <li>
+								 <!-- <li>
 									 <a class="#" href="#" title="Add to Wishlist">
 										 <i class="fa fa-heart"></i> <span>342</span>
 									 </a>
-								 </li>
-								 <li>
+								 </li> -->
+								 <!-- <li>
 									 <a class="#" href="#" title="Add to Compare">
 										 <i class="fa fa-comments"></i> <span>10</span>
 									 </a>
-								 </li>
+								 </li> -->
 								 <li>
 								 	<div class="star-rating">
 								 	<span style="width:80%"><strong class="rating">4.00</strong> out of 5</span>
@@ -159,16 +159,16 @@
 						</div>
 						<div class="box_desc">
 							<ul class="add-to-links">
-								 <li>
+								 <!-- <li>
 									 <a class="#" href="#" title="Add to Wishlist">
 										 <i class="fa fa-heart"></i> <span>342</span>
 									 </a>
-								 </li>
-								 <li>
+								 </li> -->
+								 <!-- <li>
 									 <a class="#" href="#" title="Add to Compare">
 										 <i class="fa fa-comments"></i> <span>10</span>
 									 </a>
-								 </li>
+								 </li> -->
 								 <li>
 								 	<div class="star-rating">
 								 	<span style="width:80%"><strong class="rating">4.00</strong> out of 5</span>
@@ -199,16 +199,16 @@
 						</div>
 						<div class="box_desc">
 							<ul class="add-to-links">
-								 <li>
+								 <!-- <li>
 									 <a class="#" href="#" title="Add to Wishlist">
 										 <i class="fa fa-heart"></i> <span>342</span>
 									 </a>
-								 </li>
-								 <li>
+								 </li> -->
+								 <!-- <li>
 									 <a class="#" href="#" title="Add to Compare">
 										 <i class="fa fa-comments"></i> <span>10</span>
 									 </a>
-								 </li>
+								 </li> -->
 								 <li>
 								 	<div class="star-rating">
 								 	<span style="width:80%"><strong class="rating">4.00</strong> out of 5</span>
@@ -239,16 +239,16 @@
 						</div>
 						<div class="box_desc">
 							<ul class="add-to-links">
-								 <li>
+								 <!-- <li>
 									 <a class="#" href="#" title="Add to Wishlist">
 										 <i class="fa fa-heart"></i> <span>342</span>
 									 </a>
-								 </li>
-								 <li>
+								 </li> -->
+								 <!-- <li>
 									 <a class="#" href="#" title="Add to Compare">
 										 <i class="fa fa-comments"></i> <span>10</span>
 									 </a>
-								 </li>
+								 </li> -->
 								 <li>
 								 	<div class="star-rating">
 								 	<span style="width:80%"><strong class="rating">4.00</strong> out of 5</span>
@@ -279,16 +279,16 @@
 						</div>
 						<div class="box_desc">
 							<ul class="add-to-links">
-								 <li>
+								 <!-- <li>
 									 <a class="#" href="#" title="Add to Wishlist">
 										 <i class="fa fa-heart"></i> <span>342</span>
 									 </a>
-								 </li>
-								 <li>
+								 </li> -->
+								 <!-- <li>
 									 <a class="#" href="#" title="Add to Compare">
 										 <i class="fa fa-comments"></i> <span>10</span>
 									 </a>
-								 </li>
+								 </li> -->
 								 <li>
 								 	<div class="star-rating">
 								 	<span style="width:80%"><strong class="rating">4.00</strong> out of 5</span>
@@ -319,16 +319,16 @@
 						</div>
 						<div class="box_desc">
 							<ul class="add-to-links">
-								 <li>
+								 <!-- <li>
 									 <a class="#" href="#" title="Add to Wishlist">
 										 <i class="fa fa-heart"></i> <span>342</span>
 									 </a>
-								 </li>
-								 <li>
+								 </li> -->
+								 <!-- <li>
 									 <a class="#" href="#" title="Add to Compare">
 										 <i class="fa fa-comments"></i> <span>10</span>
 									 </a>
-								 </li>
+								 </li> -->
 								 <li>
 								 	<div class="star-rating">
 								 	<span style="width:80%"><strong class="rating">4.00</strong> out of 5</span>

@@ -32,7 +32,7 @@
 						</ul>
 						
 					</div>
-					<p class="photo"><img src="./images/bg_about.png" alt="course 01" /></p>
+					<p class="photo"><img src="./images/img_hoptac01.png" alt="course 01" /></p>
 				</div>
 				<div class="box_item box_ssmall">
 
@@ -51,7 +51,7 @@
 						</ul>
 						<p class="info"><strong>Ưu tiên</strong> những chuyên gia – giảng viên nổi tiếng, có uy tín trong ngành. Có kinh nghiệm thực tiễn và có kinh nghiệm giảng dạy ở lĩnh vực mà mình muốn giảng dạy.</p>
 					</div>
-					<p class="photo"><img src="./images/bg_about.png" alt="course 01" /></p>
+					<p class="photo"><img src="./images/img_hoptac02.png" alt="course 01" /></p>
 				</div>
 			</div>
 			
@@ -63,12 +63,10 @@
 						<p class="number">03</p>
 						<h3><span> Hợp tác giảng dạy với chúng tôi để:</span></h3>
 						<ul>
-							<li><i class="fa fa-caret-right"></i>  Quản trị Nhân sự</li>
-							<li><i class="fa fa-caret-right"></i>  Quản trị chiến lược</li>
-							<li><i class="fa fa-caret-right"></i>  Kỹ năng điều hành doanh nghiệp</li>
-							<li><i class="fa fa-caret-right"></i>  Kỹ năng đàm phán kinh doanh</li>
-							<li><i class="fa fa-caret-right"></i>  Kỹ năng lập kế hoạch kinh doanh</li>
-							<li><i class="fa fa-caret-right"></i>  Phong thủy trong doanh nghiệp...</li>
+							<li><i class="fa fa-caret-right"></i>  Chia sẻ giá trị từ lĩnh vực mà bạn đam mê, hiểu biết</li>
+							<li><i class="fa fa-caret-right"></i>  Đem lại cơ hội học tập và phát triển cho hàng triệu tài năng lãnh đạo nước nhà</li>
+							<li><i class="fa fa-caret-right"></i>  Gia tăng uy tín và tầm ảnh hưởng của cá nhân giảng viên</li>
+							<li><i class="fa fa-caret-right"></i>  Nhận được những lợi ích và thu nhập xứng đáng với cống hiến của mình</li>
 
 						</ul>
 					</div>
@@ -76,13 +74,11 @@
 						<p class="number">04</p>
 						<h3><span> Quy trình hợp tác gồm 5 bước:</span></h3>
 						<ul>
-							<li><i class="fa fa-caret-right"></i>  Quản trị Nhân sự</li>
-							<li><i class="fa fa-caret-right"></i>  Quản trị chiến lược</li>
-							<li><i class="fa fa-caret-right"></i>  Kỹ năng điều hành doanh nghiệp</li>
-							<li><i class="fa fa-caret-right"></i>  Kỹ năng đàm phán kinh doanh</li>
-							<li><i class="fa fa-caret-right"></i>  Kỹ năng lập kế hoạch kinh doanh</li>
-							<li><i class="fa fa-caret-right"></i>  Phong thủy trong doanh nghiệp...</li>
-
+							<li><span>1.</span>  Liên hệ, trao đổi, thống nhất hợp tác giữa hai bên</li>
+							<li><span>2.</span>  Soạn đề cương bài giảng cùng ekip của Nasa media</li>
+							<li><span>3.</span>  Thực hiện quay video bài giảng</li>
+							<li><span>4.</span>  Xuất bản sản phẩm, đăng lên website lanhdaotaiba.com</li>
+							<li><span>5.</span>  Nhận thu nhập từ sản phẩm</li>
 						</ul>
 					</div>
 

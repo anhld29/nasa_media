@@ -1625,7 +1625,7 @@ CSS information
 
 .con_courses .box_courses .box_course .box_course_wrap .box_info h4 {
 	font-size: 129%;
-	font-weight: normal;
+	font-weight: 700;
 }
 
 @media only screen and (max-width: 767px) {
@@ -2348,6 +2348,12 @@ CSS information
 	}
 }
 
+.con_course .box_course_wrap .box_sidebar.active {
+	position: fixed;
+	max-width: 370px;
+	top: 0;
+}
+
 .con_course .box_course_wrap .box_sidebar .ic-item {
 	margin-bottom: .7em;
 }
@@ -2653,6 +2659,7 @@ CSS information
 	position: absolute;
 	right: 0;
 	top: 0;
+	padding-top: 15px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -2666,7 +2673,14 @@ CSS information
 	margin-left: 0;
 	margin-right: 0;
 	width: 100%;
-	height: 140px;
+	height: 150px;
+}
+
+#home .home-cate-khoa-hoc div {
+	font-size: 122%;
+	font-weight: 600;
+	text-align: center;
+	padding: 0 5px;
 }
 
 #home .box-icon-top .row {
@@ -2838,6 +2852,7 @@ CSS information
 	margin-bottom: 25px;
 	font-size: 158%;
 	text-transform: uppercase;
+	font-weight: 400;
 }
 
 .con_about .box_about .box_item .box_info h3 span {
@@ -2860,6 +2875,16 @@ CSS information
 		font-size: 20px;
 		margin-right: 60px !important;
 	}
+}
+
+.con_about .box_about .box_item .box_info h3 span:after {
+	height: 5px;
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	-ms-border-radius: 1em;
+	-o-border-radius: 1em;
+	border-radius: 1em;
+	bottom: -15px;
 }
 
 .con_about .box_about .box_item .box_info .number {
@@ -2909,6 +2934,7 @@ CSS information
 
 .con_about .box_about .box_item .box_info ul li {
 	margin-bottom: 0px;
+	text-align: justify;
 }
 
 .con_about .box_about .box_item .box_info ul li i {
@@ -2984,6 +3010,7 @@ CSS information
 	margin-bottom: 25px;
 	font-size: 158%;
 	text-transform: uppercase;
+	font-weight: 400;
 }
 
 .con_about .box_featured .box_middle .box_item h3 span {
@@ -3005,6 +3032,30 @@ CSS information
 	.con_about .box_featured .box_middle .box_item h3 {
 		font-size: 20px;
 	}
+}
+
+.con_about .box_featured .box_middle .box_item h3 span:after {
+	height: 5px;
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	-ms-border-radius: 1em;
+	-o-border-radius: 1em;
+	border-radius: 1em;
+	bottom: -15px;
+}
+
+.con_about .box_featured .box_middle .box_item ul li {
+	line-height: 2;
+}
+
+.con_about .box_featured .box_middle .box_item ul li i {
+	color: #df0002;
+}
+
+.con_about .box_featured .box_middle .box_item ul li span {
+	color: #df0002;
+	font-weight: 500;
+	margin-right: .2em;
 }
 
 @media only screen and (max-width: 767px) {
@@ -3222,6 +3273,10 @@ CSS information
 
 #about .theo-doi {
 	margin-top: 0;
+}
+
+#teachers {
+	background: #f2f2f2;
 }
 
 /*# sourceMappingURL=../maps/common.css.map */

@@ -4,6 +4,5 @@
 <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 <link href="<?php echo location_file; ?>css/common.css" rel="stylesheet" type="text/css" media="all">
 <link rel="stylesheet" href="<?php echo location_file; ?>css/bootstrap/4.1.3/bootstrap.min.css">
-  <link rel="stylesheet" href="<?php echo location_file; ?>css/fontawesome/5.4.1/all.css">
-  <link rel="stylesheet" href="<?php echo location_file; ?>css/slick/slick-theme.css">
-  <link rel="stylesheet" href="<?php echo location_file; ?>css/home.css">
+<link rel="stylesheet" href="<?php echo location_file; ?>css/slick/slick-theme.css">
+<link rel="stylesheet" href="<?php echo location_file; ?>css/home.css">

@@ -3,3 +3,4 @@
 <script src="<?php echo location_file;?>js/common.js"></script>
 <script src="<?php echo location_file;?>js/bootstrap/4.1.3/bootstrap.min.js"></script>
 <script src="<?php echo location_file;?>js/slick.min.js"></script>
+<script src="<?php echo location_file;?>js/jquery.sticky-kit.min.js"></script>

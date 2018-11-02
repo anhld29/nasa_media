@@ -1,4 +1,4 @@
-<?php $page = 'homepage'; include "./config/include.php"; ?>
+<?php $page = 'teachers'; include "./config/include.php"; ?>
 
 <!-- *** stylesheet *** -->
 <?php include "./templates/common_css.php"; ?>
