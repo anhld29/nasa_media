@@ -54,7 +54,7 @@ CSS information
 					width: 0;
 					height: 0;
 					border-style: solid;
-					border-width: 70px 37px 0 0;
+					border-width: 64px 35px 0 0;
 					border-color: #df0002 transparent transparent transparent;	
 					z-index: -1;		
 				}
@@ -83,9 +83,9 @@ CSS information
 						font-family: $robo;
 						color: #FFF;
 						text-transform: uppercase;
-						@include fsz(20);
+						@include fsz(16);
 						text-decoration: none;
-						padding:1.05em 0;
+						padding:1.3em 0;
 						display: block;
 						position: relative;
 						text-align: center;

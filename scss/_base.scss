@@ -16,7 +16,7 @@ body {
 	color: $baseColor;
 	background: #FFF;
 	-webkit-text-size-adjust: none;
-	@include fsz($baseSize,13);
+	@include fsz($baseSize,13.4);
 	.ie & { @include fsz($baseSize,13.4); }
 	@include mq(sp) {
 		@include fsz($baseSize - 1,13);
@@ -60,7 +60,7 @@ html.ie8 {
 	#page {
 		min-width: $columnWidth * 1px !important;
 		margin: auto;
-		font-size: 100% !important;
+		font-size: 14px;
 	}
 }
 

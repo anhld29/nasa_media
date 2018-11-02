@@ -16,10 +16,10 @@
 			<div class="sub-title">Nền tảng khóa học trực tuyến về kỹ năng cho lãnh đạo và quản lý trung cấp</div>
 		</div>
 	</div>
-	<div class="con_about">
+	<div class="con_about coopera">
 		<div class="box_about">
 			<div class="wrap">
-				<div class="box_item float_right">
+				<div class="box_item float_right box_small">
 
 					<div class="box_info">
 						<p class="number">01</p>
@@ -34,12 +34,12 @@
 					</div>
 					<p class="photo"><img src="./images/bg_about.png" alt="course 01" /></p>
 				</div>
-				<div class="box_item">
+				<div class="box_item box_ssmall">
 
 					<div class="box_info">
 						<p class="number">02</p>
 						<h3><span>Mong muốn hợp tác</span></h3>
-						<p class="info">Chúng tôi mong muốn được hợp tác với: Các giảng viên/chuyên gia/chuyên viên/nhân sự cấp cao /cấp quản lý /doanh nhân có khả năng giảng dạy tốt ở một trong các chủ đề KIẾN THỨC/KỸ NĂNG DÀNH CHO LÃNH ĐẠO như:</p>
+						<p class="info nopadding">Chúng tôi mong muốn được hợp tác với: Các giảng viên/chuyên gia/chuyên viên/nhân sự cấp cao /cấp quản lý /doanh nhân có khả năng giảng dạy tốt ở một trong các chủ đề KIẾN THỨC/KỸ NĂNG DÀNH CHO LÃNH ĐẠO như:</p>
 						<ul>
 							<li><i class="fa fa-caret-right"></i>  Quản trị Nhân sự</li>
 							<li><i class="fa fa-caret-right"></i>  Quản trị chiến lược</li>
@@ -56,10 +56,10 @@
 			</div>
 			
 		</div>
-		<div class="box_featured">
+		<div class="box_featured box_feat_coo">
 			<div class="wrap">
 				<div class="box_middle">
-					<div class="box_item">
+					<div class="box_item item_right">
 						<p class="number">03</p>
 						<h3><span> Hợp tác giảng dạy với chúng tôi để:</span></h3>
 						<ul>
@@ -72,7 +72,7 @@
 
 						</ul>
 					</div>
-					<div class="box_item item_right">
+					<div class="box_item ">
 						<p class="number">04</p>
 						<h3><span> Quy trình hợp tác gồm 5 bước:</span></h3>
 						<ul>

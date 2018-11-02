@@ -343,6 +343,7 @@ CSS information
 // style page Course
 
 .con_course {
+	font-size: 14px;
 	.box_course_wrap {
 		overflow: hidden;
 		margin: 20px -15px;
@@ -752,6 +753,7 @@ CSS information
 					margin: 1em auto;
 					text-transform: uppercase;
 					@include fsz(16);
+					font-weight: bold;
 				}
 			}	
 			.star-rating{
@@ -999,6 +1001,19 @@ CSS information
 
 
 .con_about {
+	font-size: 16px;
+	&.coopera {
+		.box_about {
+			h3 {
+				margin-bottom: 10px!important;	
+			}
+			.box_item {
+				.box_info {
+					height: 420px;
+				}
+			}
+		}
+	}
 	.box_about {
 		.box_item {
 			position: relative;
@@ -1027,6 +1042,17 @@ CSS information
 					}
 				}
 			}
+			&.box_small {
+				.box_info {
+					@include cV(padding,60px 100px 40px 115px,60px 100px 40px 60px,20px 10px);
+				}
+			}
+			&.box_ssmall {
+				.box_info {
+					@include cV(padding,30px 80px 30px 50px,60px 100px 40px 60px,20px 10px);
+				}
+			}
+
 			p.photo {
 				position: absolute;
 				top: 0px;
@@ -1078,6 +1104,16 @@ CSS information
 				p.info {
 					padding-bottom: 40px;
 					font-size: 16px;
+					text-align: justify;
+					&.nopadding {
+						padding-bottom: 10px;
+						margin-bottom: 0;
+						@include mq(sp) {
+							padding-bottom: 10px;
+
+							// font-size: 14px;
+						}
+					}
 					@include mq(sp) {
 						padding-bottom: 20px;
 
@@ -1087,7 +1123,7 @@ CSS information
 				ul {
 					li {
 						// line-height: 180%;
-						margin-bottom: 5px;
+						margin-bottom: 0px;
 						i {
 							color: $red;
 							margin-right: 10px;
@@ -1107,6 +1143,12 @@ CSS information
 			border-bottom: 1px solid #c6c3c3;
 			position: relative;
 			margin-bottom: 20px;
+			&.box_feat_coo {
+				&:before {
+					left: 0;
+					right: 50%;
+				}
+			}
 			@include mq(sp) {
 				height: auto;
 				border-bottom: 0;
@@ -1140,6 +1182,9 @@ CSS information
 					}
 					h3 {
 						@include sst_title02();
+						@include mq(sp) {
+							font-size: 20px;
+						}
 					}
 					&.item_right {
 						@include mq(sp) {
@@ -1156,6 +1201,14 @@ CSS information
 							color: #fff;
 							@include mq(sp) {
 								// color: $baseColor;
+							}
+						}
+						ul {
+							li {
+								color: #fff;
+								i {
+									color: $red;
+								}
 							}
 						}
 					}
@@ -1187,7 +1240,7 @@ CSS information
 			background: url(../images/bg_about_bottom.png) center left no-repeat;
 			background-size: cover;
 			@include mq(sp) {
-				padding: 50px 0;
+				padding: 50px 0 0 0;
 			}
 			.wrap {
 				position: relative;
@@ -1278,6 +1331,7 @@ CSS information
 						.info {
 							max-width: 260px;
 							margin: 0 auto;
+							text-align: justify;
 							@include mq(sp) {
 								max-width: none;
 								    padding-top: 30px;
