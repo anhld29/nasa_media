@@ -312,6 +312,7 @@ CSS information
 	width: 11.96581%;
 	float: left;
 	position: relative;
+	max-height: 54px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1025px) {
@@ -324,6 +325,10 @@ CSS information
 	#header .wrap .box-logo {
 		width: 50%;
 	}
+}
+
+#header .wrap .box-logo img {
+	max-height: 54px;
 }
 
 @media only screen and (min-width: 1026px) {
@@ -401,12 +406,14 @@ CSS information
 	font-family: "Roboto", sans-serif;
 	color: #FFF;
 	text-transform: uppercase;
-	font-size: 115%;
+	font-size: 15px;
 	text-decoration: none;
-	padding: 1.3em 0;
+	padding: 0;
 	display: block;
 	position: relative;
 	text-align: center;
+	line-height: 54px;
+	height: 54px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1025px) {
@@ -3266,8 +3273,8 @@ CSS information
 
 @media only screen and (max-width: 767px) {
 	.con_about .box_bottom ul li .box_item .info {
+		padding: 15px 15px 30px 15px;
 		max-width: none;
-		padding-top: 30px;
 	}
 }
 
@@ -3277,6 +3284,54 @@ CSS information
 
 #teachers {
 	background: #f2f2f2;
+}
+
+.box-teacher-home {
+	overflow: visible;
+}
+
+.box-teacher-home .list-teacher {
+	overflow: visible;
+}
+
+.box-teacher-home .list-teacher .slick-list {
+	overflow: hidden;
+}
+
+.box-teacher-home .list-teacher .slick-prev {
+	left: -15px;
+}
+
+.box-teacher-home .list-teacher .slick-prev:before {
+	background: url(../images/ic_prev.png) center left no-repeat;
+}
+
+.box-teacher-home .list-teacher .slick-next {
+	right: -15px;
+}
+
+.box-teacher-home .list-teacher .slick-next:before {
+	background: url(../images/ic_next.png) center left no-repeat;
+}
+
+.box-teacher-home .list-teacher .slick-prev, .box-teacher-home .list-teacher .slick-next {
+	text-indent: -999em;
+}
+
+@media only screen and (max-width: 767px) {
+	.box-teacher-home .list-teacher .slick-prev, .box-teacher-home .list-teacher .slick-next {
+		display: none !important;
+	}
+}
+
+.box-teacher-home .list-teacher .slick-prev:before, .box-teacher-home .list-teacher .slick-next:before {
+	content: " ";
+	opacity: 1;
+	width: 20px;
+	height: 20px;
+	text-indent: -999em;
+	font-family: 'Roboto', sans-serif;
+	display: block;
 }
 
 /*# sourceMappingURL=../maps/common.css.map */

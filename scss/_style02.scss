@@ -1126,6 +1126,7 @@ CSS information
 					padding-bottom: 40px;
 					font-size: 16px;
 					text-align: justify;
+
 					&.nopadding {
 						padding-bottom: 10px;
 						margin-bottom: 0;
@@ -1377,9 +1378,13 @@ CSS information
 							margin: 0 auto;
 							text-align: justify;
 							@include mq(sp) {
+								padding: 15px 15px 30px 15px;
 								max-width: none;
-								    padding-top: 30px;
 							}
+							// @include mq(sp) {
+								
+							// 	    padding-top: 30px;
+							// }
 						}
 					}
 				}
@@ -1394,3 +1399,41 @@ CSS information
 #teachers{
 	background:#f2f2f2;
 }
+.box-teacher-home {
+	overflow: visible;
+	.list-teacher {
+		overflow: visible;
+		.slick-list {
+			overflow: hidden;
+		}
+		.slick-prev {
+			left: -15px;
+			&:before {
+				background: url(../images/ic_prev.png) center left no-repeat;
+			}
+		}
+		.slick-next {
+			right: -15px;
+			&:before {
+				background: url(../images/ic_next.png) center left no-repeat;
+			}
+		}
+		.slick-prev, .slick-next {
+			text-indent: -999em;
+			@include mq(sp) {
+				display: none!important;
+			}
+			&:before {
+				content: " ";
+				opacity: 1;
+				width: 20px;
+				height: 20px;
+				text-indent: -999em;
+				font-family: 'Roboto', sans-serif;
+				display: block;
+			}
+		}
+		
+	}
+}
+
