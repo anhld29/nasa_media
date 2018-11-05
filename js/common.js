@@ -88,9 +88,12 @@ $(function(){
 	        if(!$next.is(':animated')) $next.slideToggle(300).prev().toggleClass('active');
 	    }
 	});
-
-	//scrollTop
-	$(".box_sidebar").stick_in_parent();
+	var _width = $(window).width();
+	if(_width > 767){
+		//scrollTop
+		$(".box_sidebar").stick_in_parent();
+	}
+	
 
 });
     
