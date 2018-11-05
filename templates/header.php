@@ -10,7 +10,17 @@
 			<div class="box-menu-search view_pc">
 				<ul class="list-main-menu">
 					<li><a href="#" class="over">Giới thiệu</a></li>
-					<li><a href="#" class="over">Khóa học</a></li>
+					<li class="sub-menu">
+						<a href="#" class="over">Khóa học</a>
+						<ul>
+							<li><a href="#">Lãnh đạo và quản lý</a></li>
+							<li><a href="#">Lãnh đạo và quản lý</a></li>
+							<li><a href="#">Lãnh đạo và quản lý</a></li>
+							<li><a href="#">Lãnh đạo và quản lý</a></li>
+							<li><a href="#">Lãnh đạo và quản lý</a></li>
+							<li><a href="#">Lãnh đạo và quản lý</a></li>
+						</ul>
+					</li>
 					<li><a href="#" class="over">Giáo viên</a></li>
 					<li><a href="#" class="over">Hợp tác</a></li>
 				</ul>
