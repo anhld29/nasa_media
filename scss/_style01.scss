@@ -16,6 +16,8 @@ CSS information
 // }
 #header{
 	background:#262a3a;
+	position: relative;
+	z-index: 9;
 	@include mq(tab_sp) {
 		background:#df0002;
 	}
@@ -83,7 +85,7 @@ CSS information
 				li{
 					display: inline-block;
 					padding: 0 1em;
-
+					position: relative;
 					a{
 						font-family: $robo;
 						color: #FFF;
@@ -101,19 +103,64 @@ CSS information
 						}
 						&:before{
 							width: 100%;
-							height: 5px;
+							height: 3px;
 							background:red;
 							content: "";
 							position: absolute;
 							left: 0;
-							bottom: -2px;
+							bottom: 0;
 							@include transition(all .5s ease);
-							@include transform(scale(0));
+							@include transform(scale(0,1));
 						}
 						&:hover{
 							&:before{
+								@include transform(scale(1,1));
+							}
+						}
+					}
+					ul{
+						position: absolute;
+						width: 200px;
+						left: 50%;
+						margin-left: -100px;
+						z-index: 999;
+						background:#262a3a;
+						float: none;
+						padding-bottom: 10px;
+						@include opacity(0);
+						visibility: hidden;
+						@include transition(opacity .3s ease, visibility .4s ease-out);
+						li{
+							display: block;
+							padding: 0;
+							a{
+								display: block;
+								text-align: left;
+								padding: 10px 15px;
+								line-height: 1.5;
+								height: auto;
+								text-transform: none;
+								background: none;
+								font-size: 100%;
+								@include transition(all .5s ease);
+								&:before{
+									display: none;
+								}
+								&:hover{
+									background:#41475e;
+								}
+							}
+						}
+					}
+					&.sub-menu:hover{
+						a{
+							&:before{
 								@include transform(scale(1));
 							}
+						}
+						ul{
+							@include opacity(1);
+							visibility: visible;
 						}
 					}
 				}
@@ -706,4 +753,7 @@ body.fix_activeSearch {
 	    margin-right: auto;
 	    margin-top: 0px;
 	}
+}
+#header-slide{
+	z-index: 0;
 }
