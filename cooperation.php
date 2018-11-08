@@ -32,7 +32,10 @@
 						</ul>
 						
 					</div>
-					<p class="photo"><img src="./images/img_hoptac01.png" alt="course 01" /></p>
+					<p class="photo">
+						<img class="d-none d-sm-block" src="./images/img_hoptac01.png" alt="course 01" />
+						<img class="d-block d-sm-none" src="./images/img_hoptac01_sp.png" alt="course 01" />
+					</p>
 				</div>
 				<div class="box_item box_ssmall">
 
@@ -51,7 +54,10 @@
 						</ul>
 						<p class="info"><strong>Ưu tiên</strong> những chuyên gia – giảng viên nổi tiếng, có uy tín trong ngành. Có kinh nghiệm thực tiễn và có kinh nghiệm giảng dạy ở lĩnh vực mà mình muốn giảng dạy.</p>
 					</div>
-					<p class="photo"><img src="./images/img_hoptac02.png" alt="course 01" /></p>
+					<p class="photo">
+						<img class="d-none d-sm-block" src="./images/img_hoptac02.png" alt="course 01" />
+						<img class="d-block d-sm-none" src="./images/img_hoptac02_sp.png" alt="course 01" />
+					</p>
 				</div>
 			</div>
 			

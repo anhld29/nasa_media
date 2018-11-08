@@ -29,7 +29,10 @@
 						khóa học chuyên sâu dành riêng cho cộng đồng doanh nhân Việt: Lãnh đạo - quản lý, Nhân sự, Tài chính – kế toán, Sản xuất – vận hành, Tiếp thị - bán hàng, Kỹ năng chuyên nghiệp…</p>
 						<p class="author"> SPO/Nasa Media </p>
 					</div>
-					<p class="photo"><img src="./images/bg_about.png" alt="course 01" /></p>
+					<p class="photo">
+						<img class="d-none d-sm-block" src="./images/bg_about.png" alt="course 01" />
+						<img class="d-block d-sm-none" src="./images/bg_about_sp01.png" alt="course 01" />
+					</p>
 				</div>
 				<div class="box_item float_right">
 
@@ -43,7 +46,10 @@
 
 						</ul>
 					</div>
-					<p class="photo"><img src="./images/bg_about.png" alt="course 01" /></p>
+					<p class="photo">
+						<img class="d-none d-sm-block" src="./images/bg_about.png" alt="course 01" />
+						<img class="d-block d-sm-none" src="./images/bg_about_sp02.png" alt="course 01" />
+					</p>
 				</div>
 			</div>
 			
@@ -80,13 +86,13 @@
 					</li>
 					<li>
 						<div class="box_item">
-							<span>Tâm Huyết</span>
+							<span>Chuyên Nghiệp</span>
 							<div class="info"> Đội ngũ giảng viên có trình độ chuyên môn cao, phương pháp phân tích giảng dạy phù hợp với người Việt.</div>
 						</div>
 					</li>
 					<li>
 						<div class="box_item">
-							<span>Tâm Huyết</span>
+							<span>Đa Dạng</span>
 							<div class="info"> SPO luôn chủ động cập nhật những giải pháp và phương thức quản trị, điều hành doanh nghiệp mới nhất ở trong và ngoài nước, giúp học viên tiếp cận được thêm nhiều tri thức mới, có giá trị thực tiễn cao.</div>
 						</div>
 					</li>

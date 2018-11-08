@@ -58,7 +58,9 @@ CSS information
 			}
 		}
 	}
+	
 }
+
 .con_courses {
 	h3.st_title {
 		@include st_title();
@@ -152,6 +154,7 @@ CSS information
 						margin: 0;
 						img {
 							width: 100%;
+							border-radius: 5px 5px 0 0;
 						}
 						
 					}
@@ -159,7 +162,7 @@ CSS information
 						position: relative;
 						text-align: center;
 						margin: 0;
-						padding: 20px 0 25px 0;
+						padding: 15px 0 20px 0;
 						background: #00162e;
 						color: #fff;
 						font-family: $roboslab;
@@ -171,6 +174,7 @@ CSS information
 							position: absolute;
 							left: 20px;
 							top: -30px;
+							border-radius: 50%;
 							@include mq(sp) {
 								position: relative;
 							}
@@ -278,9 +282,13 @@ CSS information
 						    		display: none;
 						    	}
 						    	&:last-child {
+						    		margin-left: -10px;
 						    		@include mq(sp) {
 							    		display: block;
 							    	}
+						    	}
+						    	&:first-child {
+						    		margin-right: -35px;
 						    	}
 								a {
 							    	text-decoration: none;
@@ -306,17 +314,17 @@ CSS information
     position: relative;
     width: 80px;
     height: 1.618em;
-    font-size: 1em;
+    font-size: 15px;
     font-weight: 400;
     line-height: 1.618;
 
     &:before {
     	position: absolute;
 	    top: 0;
-	    left: 0;
+	    left: -2px;
 	    float: left;
 		// opacity: .25;
-	    font-size: 13px;
+	    font-size: 17px;
 	    letter-spacing: 3px;
 	    content: "\2606\2606\2606\2606\2606";
 	    color: #ffa600;
@@ -326,14 +334,14 @@ CSS information
 	    overflow: hidden;
 	    position: absolute;
 	    top: 0;
-	    left: 0;
+	    left: -2px;
 	    padding-top: 1.5em;
 	    &:before {
 	    	color: #ffa600;
 	    	position: absolute;
 		    top: 0;
 		    left: 0;
-	    	font-size: 13px;
+	    	font-size: 17px;
 		    letter-spacing: 3px;
 		    content: "\2605\2605\2605\2605\2605";
 	    }
@@ -955,6 +963,7 @@ CSS information
 		width: 470px;
 		@include mq(sp) {
 			width: 100%;
+			margin-top: 30px!important;
 		}
 		.input-theo-doi {
 		    padding: 0 20px;
@@ -1021,8 +1030,24 @@ CSS information
 				margin-bottom: 10px!important;	
 			}
 			.box_item {
+				&.float_right {
+					.box_info {
+					float: right;
+						@include cV(padding,40px 60px 40px 120px,40px 60px 40px 120px,1em);
+					}
+					.box_info {
+						@include mq(sp) {
+							height: 350px;
+						}
+					}
+					
+				}
 				.box_info {
-					height: 420px;
+					height: 400px;
+					@include mq(sp) {
+						height: 450px;
+						margin-bottom: 0!important;
+					}
 				}
 			}
 		}
@@ -1061,8 +1086,11 @@ CSS information
 				}
 			}
 			&.box_ssmall {
+				@include mq(sp) {
+					padding-top: 10px;
+				}
 				.box_info {
-					@include cV(padding,30px 80px 30px 50px,60px 100px 40px 60px,20px 10px);
+					@include cV(padding,25px 80px 25px 50px,60px 100px 40px 60px,20px 10px);
 				}
 			}
 
@@ -1127,7 +1155,7 @@ CSS information
 					padding-bottom: 40px;
 					font-size: 16px;
 					text-align: justify;
-
+					line-height: 21px;
 					&.nopadding {
 						padding-bottom: 10px;
 						margin-bottom: 0;
@@ -1200,9 +1228,10 @@ CSS information
 					position: relative;
 					@include mq(sp) {
 						width: 100%;
-						padding: 50px 40px 0 40px;
+						padding: 40px 20px;
 						border: 1px solid #c6c3c3;
 						margin-top: 10px;
+						min-height: 370px;
 					}
 					h3 {
 						@include sst_title02();
@@ -1378,6 +1407,7 @@ CSS information
 							max-width: 260px;
 							margin: 0 auto;
 							text-align: justify;
+							line-height: 120%;
 							@include mq(sp) {
 								padding: 15px 15px 30px 15px;
 								max-width: none;
@@ -1438,3 +1468,19 @@ CSS information
 	}
 }
 
+
+.theo-doi {
+	padding-top: 100px;
+	text-align: center;
+	color: white;
+	margin-top: 40px;
+	height: 400px;
+	background-repeat: round;
+	background: url("../images/bg-chung-toi.png");
+	@include mq(sp) {
+		padding-top: 85px!important;
+		background: url("../images/bg-chung-toi-sp.png") center center!important;
+		background-size: cover!important;
+		height: 320px!important;
+	}
+}
